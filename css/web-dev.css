@@ -1,0 +1,204 @@
+.wrap{
+    gap: 96px;
+}
+
+/*------ Selected Projects ------*/
+
+.selected-projects{
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 144px 0 72px;
+    width: 100%;
+    gap: 80px;
+}
+
+.selected-projects .project-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 80px;
+
+    .project{
+        display: flex;
+        width: 100%;
+        height: 400px;
+        padding: 24px 48px;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 8px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.selected-projects .project-list .project h2{
+    color: var(--white-90);
+    font-size: 36px;
+}
+
+.selected-projects .project-list .project p{
+    color: var(--white-50);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 120%;
+}
+
+.selected-projects .project-list .project .details{
+    height: 0px;
+    width: 50%;
+    overflow: hidden;
+    border-top: solid 1.5px transparent ;
+    padding-top: 8px;
+    font-size: 18px;
+    color: var(--white-90);
+    font-weight: 300;
+    line-height: 120%;
+    transition: all 0.3s ease;
+}
+
+.selected-projects .project-list .project .tag{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    height: fit-content;
+    color: var(--white-90);
+    font-size: 14px;
+    line-height: 100%;
+    background-color: var(--main);
+    border-radius: 100px;
+    position: absolute;
+    bottom: -48px;
+    right: 12px;
+}
+
+.selected-projects .project-list .project.project-1{
+    --percentage: 42%;
+    background: 
+    linear-gradient(180deg, rgba(102, 102, 102, 0.00) var(--percentage), #000 100%), 
+    
+    /* change the project cover here*/
+    center center / cover no-repeat url(../element/picutre/uiux-selected-1.png),
+
+     lightgray 50% / cover no-repeat;
+    background-size: 100%;
+}
+
+.selected-projects .project-list .project.project-2{
+    --percentage: 42%;
+    background: 
+    linear-gradient(180deg, rgba(102, 102, 102, 0.00) var(--percentage), #000 100%), 
+    
+    /* change the project cover here*/
+    center center / cover no-repeat url(../element/picutre/uiux-selected-2.png),
+
+     lightgray 50% / cover no-repeat;
+     background-size: 100%;
+}
+
+.selected-projects .project-list .project.project-3{
+    --percentage: 42%;
+    background: 
+    linear-gradient(180deg, rgba(102, 102, 102, 0.00) var(--percentage), #000 100%), 
+
+    /* change the project cover here*/
+    center center / cover no-repeat url(../element/picutre/uiux-selected-3.png),
+
+     lightgray 50% / cover no-repeat;
+     background-size: 100%;
+}
+
+.selected-projects .project-list .project:hover{
+    background-size: 110%;
+    --percentage:-20%;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+
+    .details{
+        border-top: solid 1.5px var(--white-50) ;
+        height: 25%;
+        transition: all 0.5s ease-out;
+    }
+    .tag{
+        bottom: 12px;
+        transition: all 0.5s;
+    }
+}
+
+/*------Other Projects-----*/
+
+.other-projects{
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0px 0 72px;
+    width: 100%;
+    gap: 80px;
+}
+
+.other-projects .project-list{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+}
+
+.other-projects .project-list .project{
+    display: flex;
+    width: 47.5%;
+    height: 400px;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.other-projects .project-list .project h3{
+    color: var(--white-90);
+    font-size: 28px;
+}
+
+.other-projects .project-list .project p{
+    color: var(--white-50);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 120%;
+}
+
+.other-projects .project-list .project .tag{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: fit-content;
+    padding: 8px 16px;
+    color: var(--white-90);
+    font-size: 14px;
+    line-height: 100%;
+    background-color: var(--main);
+    border-radius: 100px;
+    position: absolute;
+    bottom: -48px;
+    right: 12px;
+}
+
+.other-projects .project-list .project.prj-1{
+    --percentage:0%;
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat url(../element/picutre/other-projects-cover-test.png);
+    background-size: 100%;
+}
+
+.other-projects .project-list .project:hover{
+    --percentage:-25%;
+    background-size: 110%;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+
+    .tag{
+        bottom:12px;
+        transition: all 0.5s;
+    }
+}
+

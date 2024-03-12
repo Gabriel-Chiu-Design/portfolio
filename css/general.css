@@ -1,0 +1,260 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, a, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    cursor: url(../elements/icons/cursor-default.png),auto;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+a{
+  text-decoration:none;
+}
+
+/* ------ color and text styles ------ */
+
+@font-face {
+	font-family: 'Sk-Modernist';
+	  src: url('fonts/Sk-Modernist-Regular.eot'); /* IE9 Compat Modes */
+	  src: url('fonts/Sk-Modernist-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		  url('fonts/Sk-Modernist-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+		  url('fonts/Sk-Modernist-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+		  url('fonts/Sk-Modernist-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+		  url('fonts/Sk-Modernist-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+	  font-weight: normal;
+	  font-style: normal;
+  }
+
+@font-face {
+	font-family: 'Sk-Modernist';
+	  src: url('fonts/Sk-Modernist-Light.eot'); /* IE9 Compat Modes */
+	  src: url('fonts/Sk-Modernist-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		  url('fonts/Sk-Modernist-Light.woff2') format('woff2'), /* Super Modern Browsers */
+		  url('fonts/Sk-Modernist-Light.woff') format('woff'), /* Pretty Modern Browsers */
+		  url('fonts/Sk-Modernist-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+		  url('fonts/Sk-Modernist-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+	  font-weight: 300;
+	  font-style: normal;
+  }
+
+@font-face {
+	font-family: 'Sk-Modernist';
+	  src: url('fonts/Sk-Modernist-Bold.eot'); /* IE9 Compat Modes */
+	  src: url('fonts/Sk-Modernist-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		  url('fonts/Sk-Modernist-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+		  url('fonts/Sk-Modernist-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+		  url('fonts/Sk-Modernist-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		  url('fonts/Sk-Modernist-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+	  font-weight: bold;
+	  font-style: normal;
+  }
+
+@font-face {
+	font-family: 'Sk-Modernist Mono';
+	  src: url('fonts/Sk-Modernist-Mono.eot'); /* IE9 Compat Modes */
+	  src: url('fonts/Sk-Modernist-Mono.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		  url('fonts/Sk-Modernist-Mono.woff2') format('woff2'), /* Super Modern Browsers */
+		  url('fonts/Sk-Modernist-Mono.woff') format('woff'), /* Pretty Modern Browsers */
+		  url('fonts/Sk-Modernist-Mono.ttf')  format('truetype'), /* Safari, Android, iOS */
+		  url('fonts/Sk-Modernist-Mono.svg#svgFontName') format('svg'); /* Legacy iOS */
+	  font-weight: normal;
+	  font-style: normal;
+  }
+
+:root{
+	font-family: Sk-Modernist;
+	--white-90:#E6E6E6;
+	--white-75:#BFBFBF;
+	--white-50:#808080;
+	--black-70:#4E4E4E;
+	--black-85:#262626;
+	--main:#E24420;
+}
+
+/* ------ body and base ------ */
+
+body{
+	background-color: var(--black-85);
+	overflow-x: hidden;
+}
+
+.wrap{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1366px;
+	margin: 0 auto;
+	gap:200px;
+}
+
+/* -------- top-navigation -------- */
+
+.header{
+	display: flex;
+	flex-shrink: 0;
+	max-width: 1366px;
+	width: 100%;
+	height: 106px;
+	padding: 0px 80px;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(180deg, #262626 0%, rgba(38, 38, 38, 0.00) 100%);
+
+	position: fixed;
+	top:0;
+	z-index: 99;
+}
+
+.header .logo-section{
+	display: flex;
+	align-items: center;
+	gap: 16px;
+
+	/* text */
+	font-size: 16px;
+	font-weight: normal;
+	color: var(--white-90);
+}
+
+.header .logo-section .logo{
+	width: 68px;
+	height: 58px;
+	background: center / cover no-repeat url(../element/icon/logo.svg);
+}
+
+.header .nav{
+	display: flex;
+	justify-content: flex-end;
+	gap: 24px;
+
+	li a{
+		color: var(--white-50);
+	}
+
+	li a:hover{
+		color: var(--white-75);
+	}
+
+	li a.active{
+		color: var(--white-90);
+		padding-bottom: 4px;
+		border-bottom: solid 1.5px var(--white-90);
+	}
+}
+
+.header .side-menu-icon{
+	display: none;
+	height: 48px;
+	width: 48px;
+	background: center / cover no-repeat url(../element/icon/side-menu-btn.svg);
+}
+
+/* -------- side-menu -------- */
+
+.side-menu{
+	display: flex;
+	max-width: 1366px;
+	width: 100%;
+	margin: 0 48px;
+	flex-direction: column;
+	align-self: stretch;
+	box-shadow: 0px 2px 4px 0px var(--black-70);
+	position: fixed;
+	top: -800px;
+	padding-top: 106px;
+	background: var(--black-85, #262626);
+	transition: all ease-out 500ms;
+}
+
+.side-menu.active{
+	top:0;
+}
+
+.side-menu a{
+	display: flex;
+	padding: 48px 48px 48px 96px;
+	justify-content: space-between;
+	align-items: center;
+	align-self: stretch;
+	border-bottom: 1.5px solid var(--black-70, #4E4E4E);
+}
+
+.side-menu a p{
+	flex: 1 0 0;
+	color: var(--white-90, #E6E6E6);
+	text-align: center;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 100%;
+}
+
+.side-menu .arrow{
+	width: 48px;
+	height: 48px;
+	background: center / contain no-repeat url(../element/icon/arrow-right.svg);
+}
+
+/* -------- section title------- */
+
+.section-title-box{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-title-box .title{
+    color: var(--white-90);
+    text-align: center;
+    font-size: 64px;
+    font-weight: normal;
+    line-height: normal;
+}
+
+.section-title-box .caption{
+    color: var(--white-50, #808080);
+    text-align: center;
+    font-family: Sk-Modernist Mono;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+}

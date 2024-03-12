@@ -1,0 +1,349 @@
+/* -------- hero-section -------- */
+
+.hero-section{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-section .animation{
+    max-width: 800px;
+    width: 100%;
+    height: 480px;
+    background: center / contain no-repeat url(../element/picutre/hero-loop.gif);
+}
+
+.hero-section .intro{
+    max-width: 800px;
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    color: var(--white-75);
+}
+
+.logo-bg{
+    width: 1515px;
+    height: 1290px;
+    transform: rotate(16.239deg);
+    flex-shrink: 0;
+    background: center / cover url(../element/icon/logo.svg);
+    opacity: 2%;
+    z-index: -1;
+
+    position: absolute;
+    top:0px;
+}
+
+/* -------- footer ------- */
+
+.footer{
+    display: flex;
+	max-width: 1366px;
+	width: 100%;
+	padding: 0px 80px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    position: fixed;
+    bottom: 24px;
+    z-index: 98;
+}
+
+.footer .link{
+    display: flex;
+    gap: 24px;
+}
+
+.footer .link .link-btn{
+    width: 24px;
+    height: 24px;
+    opacity: 0.25;
+}
+
+.footer .link .link-btn:hover{
+    opacity: 1;
+}
+
+.footer .link .ig{
+    background: center / cover url(../element/icon/instagram.svg);
+}
+
+.footer .link .behance{
+    background: center / cover url(../element/icon/behance.svg);
+}
+
+.footer .btn{
+    width: 160px;
+    height: 64px;
+    background: center / contain no-repeat url(../element/picutre/barcode.svg);
+    overflow: visible;
+}
+
+.footer .btn:hover{
+    background-image: url(../element/picutre/barcode-hover.svg);
+    transition: all 700ms ease;
+    overflow: visible;
+}
+
+/* -------- section title------- */
+
+.stone-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    gap: 120px;
+}
+
+.stone-section .stone-svg{
+    height: 540px;
+    width: 540px;
+    background: center / contain no-repeat url(../element/picutre/stone-with-line.svg);
+}
+
+.stone-section .style{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+}
+
+.stone-section .style h2{
+    color: var(--white-90);
+    font-size: 40px;
+}
+
+.stone-section .style p{
+    color: var(--white-50);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 120%;
+}
+
+.stone-section .inspiring{
+    width: 304px;
+    padding-left: 16px;
+    top: 268px;
+    right: 110px;
+}
+
+.stone-section .empathetic{
+    text-align: right;
+    width: 304px;
+    align-items: flex-end;
+    padding-right: 16px;
+    top: 375px;
+    left: 110px;
+}
+
+.stone-section .meaningful{
+    width: 389px;
+    padding-left: 16px;
+    top: 605px;
+    right: 100px;
+}
+
+/* -------- Testimonial Swiper ------- */
+
+.testimonial-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 80px;
+    overflow: hidden;
+}
+
+.testimonial-section .swiper{
+    width: 80%;
+    overflow: visible;
+}
+
+.testimonial-section .swiper-slide{
+    padding: 0 80px 48px;
+}
+
+.testimonial-section .swiper-slide-next,
+.testimonial-section .swiper-slide-prev{
+    opacity: 0.2;
+}
+
+.testimonial-section .swiper-button-prev,
+.testimonial-section .swiper-button-next{
+    width: 40px;
+    height: 12px;
+    color: transparent;
+}
+
+.testimonial-section .swiper-button-prev:hover,
+.testimonial-section .swiper-button-next:hover{
+    width: 54px;
+    height: 12px;
+    transition: all 500 ease;
+}
+
+.testimonial-section .swiper-button-prev{
+    background: center / contain no-repeat url(../element/icon/arrow-left.svg);
+}
+
+.testimonial-section .swiper-button-next{
+    background: center / contain no-repeat url(../element/icon/arrow-right.svg);
+}
+
+.testimonial-section .swiper-pagination-bullet{
+    background: var(--main);
+}
+
+.testimonial-section .comment-box{
+    display: flex;
+    padding: 40px 48px;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--black-70) ;
+}
+
+.comment-box .client{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .profile{
+        width: 186px;
+        height: 186px;
+        border-radius: 100%;
+        margin-bottom: 27px;
+    }
+    .name{
+        align-self: stretch;
+        color: var(--white-90);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+    .project-type{
+        align-self: stretch;
+        color: var(--white-50);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+.comment-box.comment01 .profile{
+    background: center / cover no-repeat url(../element/picutre/testimonial-profile.jpg);
+}
+
+.comment-box .comment{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1 0 0; 
+}
+
+.comment-box .comment h2{
+    align-self: stretch;
+    color: var(--white-90, #E6E6E6);
+    font-size: 32px;
+    line-height: 110%; /* 44px */
+}
+
+.comment-box .comment p{
+    align-self: stretch;
+    color: var(--white-75, #BFBFBF);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 150%; /* 30px */
+    letter-spacing: 0.2px;
+}
+
+/* -------- Workflow Section ------- */
+
+.workflow-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 80px;
+}
+
+.workflow-section .flow-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.workflow-section .flow{
+    display: flex;
+    max-width: 1200px;
+    align-self: stretch;
+    align-items: center;
+    gap: 120px;
+}
+
+.workflow-section .flow .stone{
+    width: 320px;
+    height: 320px;
+    background: center / contain no-repeat;
+}
+
+.workflow-section .flow .flow-description{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1 0 0;
+}
+
+.workflow-section .flow .flow-brief{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.workflow-section .flow .flow-brief h2{
+    align-self: stretch;
+    color: var(--white-90);
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.workflow-section .flow .flow-brief p{
+    align-self: stretch;
+    color: var(--white-75);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.workflow-section .flow .flow-details{
+    align-self: stretch;
+    color: var(--white-75);
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    line-height: 140%;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.workflow-section .flow .stone.stone-1{
+    background-image: url(../element/picutre/Stone-01.svg);
+}
+.workflow-section .flow .stone.stone-2{
+    background-image: url(../element/picutre/Stone-02.svg);
+}
+.workflow-section .flow .stone.stone-3{
+    background-image: url(../element/picutre/Stone-03.svg);
+}
+.workflow-section .flow .stone.stone-4{
+    background-image: url(../element/picutre/Stone-04.svg);
+}
+.workflow-section .flow .stone.stone-5{
+    background-image: url(../element/picutre/Stone-05.svg);
+}
