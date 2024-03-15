@@ -1,0 +1,155 @@
+.graphic-section{
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 144px 0 72px;
+    width: 100%;
+    gap: 80px;
+}
+
+.filter-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 0px;
+}
+
+.filter{
+    color: var(--white-50, #808080);
+    min-width: 120px;
+    text-align: center;
+	font-family: 'Sk-Modernist Mono';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 16px 16px;
+    background: center center / contain no-repeat url(../element/icon/filter-bg-default.svg);
+}
+
+.filter:hover{
+    cursor: pointer;
+    color: #F3B4A6;
+    background-image: url(../element/icon/filter-bg-hover.svg);
+}
+
+.filter.active{
+    color: #FCECE9;
+    background-image: url(../element/icon/filter-bg-active.svg);
+}
+
+.clear{
+    display: none;
+    padding: 8px 8px 8px 12px;
+    align-items: center;
+    height: fit-content;
+    gap: 5px;
+    border-radius: 100px;
+    background: var(--black-80);
+    color: var(--white-90);
+}
+
+.clear img{
+    height: 16px;
+    width: 16px;
+}
+
+.clear.active{
+    display: flex;
+}
+
+.clear.active:hover{
+    cursor: pointer;
+    background: var(--white-50);
+}
+
+
+
+/* --- gallery ---*/
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: 0px 0 72px;
+    width: 100%;
+    gap: 1%;
+}
+
+.gallery-item{
+    display: none;
+    width: 32.65%;
+    margin-bottom: 24px;
+    height: 320px;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 4px;
+    position: relative;
+    overflow: hidden;
+    order: 1;
+}
+
+.gallery-item.banner,
+.gallery-item.PPT{
+    width: 49.5%;
+}
+
+.gallery-item.active{
+    display: flex;
+}
+
+.gallery-item h3{
+    color: var(--white-90);
+    font-size: 20px;
+}
+
+.gallery-item p{
+    color: var(--white-50);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 120%;
+}
+
+.gallery-item .tag{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: fit-content;
+    padding: 8px 16px;
+    color: var(--white-90);
+    font-size: 14px;
+    line-height: 100%;
+    background-color: var(--main);
+    border-radius: 100px;
+    position: absolute;
+    bottom: -48px;
+    right: 12px;
+}
+
+
+
+/*---gallery items---*/
+
+.gallery-item.item01,
+.gallery-item.item02,
+.gallery-item.item03,
+.gallery-item.item04,
+.gallery-item.item05{
+    --percentage:0%;
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat url(../element/picutre/other-projects-cover-test.png);
+    background-size: 100%;
+}
+
+.gallery-item:hover{
+    --percentage:-25%;
+    background-size: 110%;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+
+    .tag{
+        bottom:12px;
+        transition: all 0.5s;
+    }
+}

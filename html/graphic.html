@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH Design Studio</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/graphic.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-container">
+                <a href="../index.html" class="logo-section">
+                    <div class="logo"></div>
+                    <p>SH Design Studio</p>
+                </a>
+                <ul class="nav">
+                    <li><a href="../index.html">/Home</a></li>
+                    <li><a class="active" href="graphic.html">/Graphic Design</a></li>
+                    <li><a href="web-dev.html">/Web Development</a></li>
+                </ul>
+                <div class="side-menu-icon"></div>
+            </div>
+        </div>
+        <div class="graphic-section">
+            <div class="section-title-box">
+                <h1 class="title">Graphic Design</h1>
+                <div class="caption">gallery</div>
+            </div>
+            <ul class="filter-list">
+                <li class="filter active" id="all">All</li>
+                <li class="filter" id="EC">E-Commerce</li>
+                <li class="filter" id="PPT">PPT</li>
+                <li class="filter" id="card">Card</li>
+                <li class="filter" id="banner">Banner</li>
+                <li class="filter" id="book">Booklet</li>
+                <div class="clear">
+                    Clear
+                    <img src="../element/icon/close-default.svg" alt="close">
+                </div>
+                    
+            </ul>
+            <div class="gallery">
+                <!-- gallery class: style/ category / name/ status -->
+                <a class="gallery-item EC item01 active">
+                    <h3>Project Name</h3>
+                    <p>Brief</p>
+                    <div class="tag">view details</div>
+                </a>
+
+                <a class="gallery-item book item05 active">
+                    <h3>Project Name</h3>
+                    <p>Brief</p>
+                    <div class="tag">view details</div>
+                </a>
+                <a class="gallery-item card item03 active ">
+                    <h3>Project Name</h3>
+                    <p>Brief</p>
+                    <div class="tag">view details</div>
+                </a>
+                <a class="gallery-item banner item04 active">
+                    <h3>Project Name</h3>
+                    <p>Brief</p>
+                    <div class="tag">view details</div>
+                </a>
+                <a class="gallery-item PPT item02 active ">
+                    <h3>Project Name</h3>
+                    <p>Brief</p>
+                    <div class="tag">view details</div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- javasrcript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="../js/graphic.js"></script>
+</body>
+</html>
