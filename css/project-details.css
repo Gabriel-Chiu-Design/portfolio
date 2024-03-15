@@ -1,0 +1,192 @@
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    max-width: none;
+    transition: all 0.5s;
+}
+
+/*------Cover CSS------*/
+
+.cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 640px;
+    padding: 24px 48px;
+    gap: 8px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.00) 36.12%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 66.35%, rgba(0, 0, 0, 0.75) 100%), center center / cover no-repeat url(../element/picutre/uiux-selected-1.png);
+}
+
+.cover h2{
+    max-width: 1366px;
+    width: 100%;
+    color: var(--white-90, #E6E6E6);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cover p{
+    max-width: 1366px;
+    width: 100%;
+    color: var(--white-75, #BFBFBF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/*------Case Study CSS------*/
+
+.project-showcase{
+    display: flex;
+    padding: 0 48px;
+    gap: 24px;
+    width: 100%;
+}
+
+.case-brief{
+    display: flex;
+    width: 100%;
+    max-width: 360px;
+    gap: 16px;
+    flex-direction: column;
+    flex:1 0 0;
+
+    position: sticky;
+    top: 0px;
+}
+
+.subtitle{
+    margin-bottom: 8px;
+    padding: 24px 0 4px;
+    border-bottom: 1.5px solid var(--white-90, #E6E6E6);
+
+    color: var(--white-90, #E6E6E6);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    background: var(--black-85);
+}
+
+.case-details .subtitle{
+    position: sticky;
+    top: 0px;
+}
+
+.case-brief .box{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: static;
+    top: 0;
+}
+
+.case-brief h3{
+    color: var(--white-90, #E6E6E6);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.case-brief p, .case-brief li{
+    color: var(--white-75, #E6E6E6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+.case-brief a{
+    color: var(--main);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+.case-details{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-self: stretch;
+    flex:1 0 0;
+}
+
+.case-details .box{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.case-details img{
+    width: 100%;
+    object-fit: cover;
+    background-color: var(black-85);
+}
+
+.case-details h3{
+    color: var(--white-90);
+    font-family: 'Sk-Modernist Mono';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.case-details h4{
+    color: var(--white-90);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.case-details p{
+    color: var(--white-75);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 22.4px */
+}
+
+.case-details figcaption{
+    color: var(--white-50);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 22.4px */
+}
+
+/*------ Other Fixed Elements ------*/
+
+.backtotop{
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 48px;
+    height: 48px;
+
+    img{
+        object-fit: cover;
+    }
+}
+
+.backtotop:hover{
+    cursor: pointer;
+    content: url(../element/icon/back-to-top-hover.svg)
+}
