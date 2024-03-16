@@ -1,0 +1,186 @@
+/*------Case Study CSS------*/
+
+.project-showcase{
+    display: flex;
+    padding: 0 48px;
+    gap: 24px;
+    width: 100%;
+    position: relative;
+}
+
+.case-brief{
+    display: flex;
+    width: 100%;
+    max-width: 360px;
+    gap: 16px;
+    flex-direction: column;
+    flex:1 0 0;
+
+    position: sticky;
+    top: 0px;
+}
+
+.subtitle{
+    margin-bottom: 8px;
+    padding: 120px 0 4px;
+    border-bottom: 1.5px solid var(--white-90, #E6E6E6);
+
+    color: var(--white-90, #E6E6E6);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    background: var(--black-85);
+}
+
+.case-details .subtitle{
+    position: sticky;
+    top: 0px;
+}
+
+.case-brief .box{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: static;
+    top: 0;
+}
+
+.case-brief h3{
+    color: var(--white-90, #E6E6E6);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.case-brief p, .case-brief li{
+    color: var(--white-75, #E6E6E6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+.case-brief a{
+    color: var(--main);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+.case-brief .contact{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px 4px 0;
+    gap: 8px;
+    border-radius: 8px;
+    margin-top: 24px;
+
+    color: var(--black-85);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 125%;
+    background-color: var(--white-90);
+}
+
+.case-brief .contact:hover{
+    color: var(--white-90);
+    background-color: var(--main);
+    
+    img{
+        content: url(../element/icon/contact-hover.svg);
+    }
+}
+
+.case-brief .back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px 4px 0;
+    gap: 8px;
+    border-radius: 8px;
+    margin-top: 12px;
+
+    color: var(--white-50);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 125%;
+    background-color: var(--black-80);
+}
+
+.case-brief .back:hover{
+    color: var(--white-75);
+    background-color: var(--black-70);
+    
+    img{
+        content: url(../element/icon/subdirectory-arrow-left-hover.svg);
+    }
+}
+
+.case-brief .box img{
+    height: 36px;
+    width: 36px;
+    padding: 4px;
+    object-fit: cover;
+}
+
+
+.case-details{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-self: stretch;
+    flex:1 0 0;
+}
+
+.case-details .box{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.case-details img{
+    width: 100%;
+    object-fit: cover;
+    background-color: var(black-85);
+}
+
+.case-details h3{
+    color: var(--white-90);
+    font-family: 'Sk-Modernist Mono';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.case-details h4{
+    color: var(--white-90);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.case-details p{
+    color: var(--white-75);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 22.4px */
+}
+
+.case-details figcaption{
+    color: var(--white-50);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 22.4px */
+}
