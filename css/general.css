@@ -262,34 +262,3 @@ body{
     font-weight: 300;
     font-style: normal;
 }
-
-
-/*-- Crisp Button Customization --*/
-
-/* button size & display */
-.crisp-client .cc-tlyw .cc-kxkl .cc-nsge .cc-imbb {
-    width: fit-content !important;
-    height: fit-content !important;
-    display: block !important;
-    border-radius: 100% !important;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,.05)!important;
-    transition: transform .15s ease-in-out !important;
-}
-
-/* button bg color */
-.crisp-client .cc-tlyw .cc-qfnu {
-    background-color: transparent !important;
-}
-
-/* button icon */
-.crisp-client .cc-tlyw[data-website-logo=false][data-last-operator-face=false] .cc-kxkl .cc-nsge .cc-imbb .cc-11f2[data-is-ongoing=false] .cc-15e7 {
-	background: center / contain no-repeat url(../element/picutre/barcode.svg) !important;
-    display: inline-block !important;
-    width: 160px !important;
-    height: 64px !important;
-    position: static !important;
-}
-
-.crisp-client .cc-tlyw[data-website-logo=false][data-last-operator-face=false] .cc-kxkl .cc-nsge .cc-imbb .cc-11f2[data-is-ongoing=false] .cc-15e7:hover{
-	background-image: url(../element/picutre/barcode-hover.svg) !important;
-}
