@@ -4,7 +4,7 @@
     max-width: 1024px;
     margin: 144px 0 72px;
     width: 100%;
-    gap: 80px;
+    gap: 0px;
 }
 
 .filter-list{
@@ -12,7 +12,11 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
-    padding: 16px 0px;
+    padding: 48px 0px 48px;
+
+    position: sticky;
+    top:72px;
+    z-index: 1;
 }
 
 .filter{
@@ -130,13 +134,57 @@
 
 /*---gallery items---*/
 
-.gallery-item.item01,
-.gallery-item.item02,
-.gallery-item.item03,
-.gallery-item.item04,
-.gallery-item.item05{
-    --percentage:0%;
+.gallery-item{
+    --percentage:60%;
     background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat url(../element/picutre/other-projects-cover-test.png);
+    background-size: 100%;
+}
+
+.gallery-item.item04{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/mollifix/cover.png);
+    background-size: 100%;
+}
+
+.gallery-item.item05{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/ge-travel/web-banner-5.png), #111111;
+    background-size: 100%;
+}
+
+.gallery-item.item06{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/in-well/inwell-4.png);
+    background-size: 100%;
+}
+
+.gallery-item.item07{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/in-well/inwell-2.png);
+    background-size: 100%;
+}
+
+.gallery-item.item08{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/in-well/inwell-1.png);
+    background-size: 100%;
+}
+
+.gallery-item.item09{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/in-well/inwell-10.png);
+    background-size: 100%;
+}
+
+.gallery-item.item10{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/in-well/inwell-13.jpg);
+    background-size: 100%;
+}
+
+.gallery-item.item11{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/in-well/inwell-6.png);
     background-size: 100%;
 }
 
