@@ -574,12 +574,14 @@ body{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 80px;
+    gap: 120px;
+    margin-bottom: 120px;
 }
 
 .workflow-section .flow-list{
     display: flex;
     flex-direction: column;
+    gap: 96px;
 }
 
 .workflow-section .flow{
@@ -587,13 +589,24 @@ body{
     max-width: 1200px;
     align-self: stretch;
     align-items: center;
-    gap: 120px;
+    gap: 80px;
 }
 
 .workflow-section .flow .stone{
-    width: 320px;
-    height: 320px;
-    background: center / contain no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 240px;
+    background: center / cover no-repeat;
+    overflow: visible;
+}
+
+.workflow-section .flow .stone img{
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .workflow-section .flow .flow-description{
@@ -619,15 +632,16 @@ body{
 
 .workflow-section .flow .flow-brief p{
     align-self: stretch;
-    color: var(--white-75);
-    font-size: 20px;
+    color: var(--white-90);
+    font-size: 24px;
     font-weight: 300;
+    line-height: 125%;
 }
 
 .workflow-section .flow .flow-details{
     align-self: stretch;
     color: var(--white-75);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     letter-spacing: 0.4px;
     line-height: 140%;
@@ -635,18 +649,88 @@ body{
     list-style-position: inside;
 }
 
-.workflow-section .flow .stone.stone-1{
-    background-image: url(../element/picutre/Stone-01.svg);
+@media (max-width:1366px) {
+    .workflow-section{
+        padding: 0 48px;
+    }
 }
-.workflow-section .flow .stone.stone-2{
-    background-image: url(../element/picutre/Stone-02.svg);
+
+@media (max-width:1024px) {
+    .workflow-section{
+        gap: 80px;
+        margin-bottom: 120px;
+    }
+    .workflow-section .flow-list{
+        gap: 48px;
+    }
+    .workflow-section .flow{
+        padding-left: 0px;
+        gap: 48px;
+    }
+    .workflow-section .flow .flow-brief h2{
+        font-size: 32px;
+    }
+    .workflow-section .flow .flow-brief p{
+        font-size: 20px;
+    }
+    .workflow-section .flow .flow-details{
+        font-size: 18px;
+    }
+    .workflow-section .flow .stone{
+        width: 160px;
+        height: 160px;
+    }
+    .workflow-section .flow .stone img{
+        width: 200%;
+        height: 200%;
+    }
 }
-.workflow-section .flow .stone.stone-3{
-    background-image: url(../element/picutre/Stone-03.svg);
+
+@media (max-width:768px) {
+    .workflow-section{
+        padding: 0 16px;
+    }
+    .workflow-section .flow{
+        gap: 16px;
+    }
+    .workflow-section .flow-list{
+        gap: 80px;
+    }
+    .workflow-section .flow .flow-brief h2{
+        font-size: 24px;
+    }
+    .workflow-section .flow .flow-brief p{
+        font-size: 18px;
+    }
+    .workflow-section .flow .flow-details{
+        font-size: 16px;
+    }
+    .workflow-section .flow .stone{
+        width: 120px;
+        height: 120px;
+    }
+    .workflow-section .flow .stone img{
+        width: 200%;
+        height: 200%;
+    }
 }
-.workflow-section .flow .stone.stone-4{
-    background-image: url(../element/picutre/Stone-04.svg);
-}
-.workflow-section .flow .stone.stone-5{
-    background-image: url(../element/picutre/Stone-05.svg);
+
+@media (max-width:440px) {
+    .workflow-section .flow-list{
+        gap: 48px;
+    }
+    .workflow-section .flow{
+        gap: 0px;
+        align-items: flex-start;
+        overflow: visible;
+    }
+    .workflow-section .flow .stone {
+        width: 100px;
+        height: 100px;   
+    }
+    .workflow-section .flow .stone img{
+        width: 160px;
+        height: 240px;
+        object-position: -24px 12px;
+    }
 }

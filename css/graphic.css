@@ -1,3 +1,8 @@
+.header{
+    max-width: none;
+    transition: all 0.5s;
+}
+
 .graphic-section{
     display: flex;
     flex-direction: column;
@@ -15,8 +20,10 @@
     padding: 48px 0px 48px;
 
     position: sticky;
-    top:72px;
+    top:0px;
     z-index: 1;
+
+    background: linear-gradient(180deg, #262626 50%, rgba(38, 38, 38, 0.00) 100%);
 }
 
 .filter{
