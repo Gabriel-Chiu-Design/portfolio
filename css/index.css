@@ -58,6 +58,9 @@
         font-size: 18px;
         padding: 0 48px;
     }
+    .logo-bg{
+        width: 150%;
+    }
 }
 
 @media (max-width:768px) {
@@ -71,6 +74,9 @@
     .hero-section .intro{
         font-size: 16px;
         padding: 0 24px;
+    }
+    .logo-bg{
+        width: 200%;
     }
 }
 
