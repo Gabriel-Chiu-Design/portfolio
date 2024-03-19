@@ -35,9 +35,9 @@
 }
 
 .logo-bg{
-    width: 80%;
-    min-width: 1500px;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     transform: rotate(16.239deg);
     flex-shrink: 0;
     opacity: 2%;
