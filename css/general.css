@@ -163,7 +163,7 @@ body{
 .header .logo-section .logo{
 	width: 68px;
 	height: 58px;
-	background: center / cover no-repeat url(../element/icon/logo.svg);
+	background: center / contain no-repeat url(../element/icon/logo.svg);
 }
 
 .header .nav{
@@ -193,13 +193,16 @@ body{
 	background: center / cover no-repeat url(../element/icon/side-menu-btn.svg);
 }
 
+.header .side-menu-icon:hover{
+	cursor: pointer;
+}
+
 /* -------- side-menu -------- */
 
 .side-menu{
 	display: flex;
 	max-width: 1366px;
 	width: 100%;
-	margin: 0 48px;
 	flex-direction: column;
 	align-self: stretch;
 	box-shadow: 0px 2px 4px 0px var(--black-70);
@@ -207,7 +210,9 @@ body{
 	top: -800px;
 	padding-top: 106px;
 	background: var(--black-85, #262626);
-	transition: all ease-out 500ms;
+	transition: all ease-out 300ms;
+
+	z-index: 3;
 }
 
 .side-menu.active{
@@ -220,6 +225,7 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	align-self: stretch;
+	
 	border-bottom: 1.5px solid var(--black-70, #4E4E4E);
 }
 
@@ -238,12 +244,72 @@ body{
 	background: center / contain no-repeat url(../element/icon/arrow-right.svg);
 }
 
+.overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.70);
+	opacity: 0;
+	transition: all 300ms;
+	z-index: 2;
+}
+
+.overlay.active{
+	display: block;
+	opacity: 1;
+}
+
+.overlay:hover{
+	cursor: pointer;
+}
+
+@media (max-width:1024px) {
+	.header .nav{
+		display: none;
+	}
+	.header .side-menu-icon{
+		display: block;
+	}
+	.header .header-container{
+		padding: 24px 24px;
+	}
+}
+
+@media (max-width:768px) {
+	.side-menu a{
+		padding: 24px 24px 24px 64px;
+	}
+	.side-menu a p{
+		font-size: 18px;
+	}
+	.header .header-container{
+		padding: 24px 16px;
+	}
+	.header .logo-section{
+		flex:1 0 0;
+		padding-right: 16px;
+
+		p{
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.header .logo-section .logo{
+		width: 52px;
+		height: 44px;
+	}
+}
+
+
 /* -------- section title------- */
 
 .section-title-box{
     display: flex;
     flex-direction: column;
     gap: 8px;
+	width: 100%;
 }
 
 .section-title-box .title{
@@ -261,4 +327,34 @@ body{
     font-size: 20px;
     font-weight: 300;
     font-style: normal;
+}
+
+@media (max-width:1366px) {
+	.section-title-box .title{
+		font-size: 64px;
+	}
+	.section-title-box .caption{
+		font-size: 20px;
+	}
+}
+
+@media (max-width:1024px) {
+	.section-title-box .title{
+		font-size: 48px;
+	}
+	.section-title-box .caption{
+		font-size: 18px;
+	}
+}
+
+@media (max-width:768px) {
+	.section-title-box{
+		gap: 4px;
+	}
+	.section-title-box .title{
+		font-size: 36px;
+	}
+	.section-title-box .caption{
+		font-size: 16px;
+	}
 }

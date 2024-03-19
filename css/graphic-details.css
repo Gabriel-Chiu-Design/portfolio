@@ -15,23 +15,20 @@
     gap: 16px;
     flex-direction: column;
     flex:1 0 0;
+    margin-top: 120px;
 
     position: sticky;
-    top: 0px;
+    top: 120px;
 }
 
-.subtitle{
+.case-brief .subtitle{
     margin-bottom: 8px;
-    padding: 120px 0 4px;
-    border-bottom: 1.5px solid var(--white-90, #E6E6E6);
 
     color: var(--white-90, #E6E6E6);
-    font-size: 24px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
-    background: var(--black-85);
 }
 
 .case-details .subtitle{
@@ -146,6 +143,20 @@
     margin-bottom: 24px;
 }
 
+.case-details .subtitle{
+    margin-bottom: 8px;
+    padding: 120px 0 4px;
+    border-bottom: 1.5px solid var(--white-90, #E6E6E6);
+
+    color: var(--white-90, #E6E6E6);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    background: var(--black-85);
+}
+
 .case-details img{
     width: 100%;
     object-fit: cover;
@@ -155,7 +166,7 @@
 .case-details h3{
     color: var(--white-90);
     font-family: 'Sk-Modernist Mono';
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -171,7 +182,7 @@
 
 .case-details p{
     color: var(--white-75);
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 300;
     line-height: 140%; /* 22.4px */

@@ -12,13 +12,14 @@ body{
     gap: 28px;
     height: 100vh;
     width: 100%;
+    gap: 72px;
 }
 
 .hero-section .animation{
     max-width: 800px;
     width: 100%;
     height: 480px;
-    background: center / contain no-repeat url(../element/picutre/hero-loop.gif);
+    object-fit: contain;
 }
 
 .hero-section .intro{
@@ -27,22 +28,49 @@ body{
     font-size: 20px;
     letter-spacing: 2px;
     font-weight: 300;
-    line-height: normal;
+    line-height: 140%;
     text-align: center;
     color: var(--white-75);
 }
 
 .logo-bg{
-    width: 1515px;
-    height: 1290px;
+    width: 80%;
+    min-width: 1500px;
+    object-fit: cover;
     transform: rotate(16.239deg);
     flex-shrink: 0;
-    background: center / cover url(../element/icon/logo.svg);
     opacity: 2%;
     z-index: -1;
 
     position: absolute;
-    top:-160px;
+    top: 0;
+}
+
+@media (max-width:1024px) {
+    .hero-section{
+        gap: 48px;
+    }
+    .hero-section .animation{
+        height: 400px;
+    }
+    .hero-section .intro{
+        font-size: 18px;
+        padding: 0 48px;
+    }
+}
+
+@media (max-width:768px) {
+    .hero-section{
+        gap: 24px;
+    }
+    .hero-section .animation{
+        width: 100%;
+        height: fit-content;
+    }
+    .hero-section .intro{
+        font-size: 16px;
+        padding: 0 24px;
+    }
 }
 
 /* -------- footer ------- */
@@ -57,7 +85,7 @@ body{
 
     position: fixed;
     bottom: 24px;
-    z-index: 98;
+    z-index: 1;
 }
 
 .footer .link{
@@ -96,7 +124,29 @@ body{
     overflow: visible;
 }
 
-/* -------- section title------- */
+@media (max-width:1366px) {
+    .footer{
+        padding: 0px 48px;
+    }
+}
+
+@media (max-width:1024px) {
+    .footer{
+        padding: 0px 24px;
+    }
+    .footer .btn{
+        width: 120px;
+        height: 48px;
+    }
+}
+@media (max-width:768px) {
+    .footer .link{
+        display: flex;
+        gap: 12px;
+    }
+}
+
+/* -------- stone section------- */
 
 .stone-section{
     display: flex;
@@ -137,6 +187,8 @@ body{
     padding-left: 16px;
     top: 268px;
     right: 110px;
+    
+    background-color: var(--black-85);
 }
 
 .stone-section .empathetic{
@@ -146,6 +198,7 @@ body{
     padding-right: 16px;
     top: 375px;
     left: 110px;
+    background-color: var(--black-85);
 }
 
 .stone-section .meaningful{
@@ -153,6 +206,149 @@ body{
     padding-left: 16px;
     top: 605px;
     right: 100px;
+    background-color: var(--black-85);
+}
+
+@media (max-width:1366px) {
+    .stone-section .stone-svg{
+        width: 480px;
+        height: 480px;
+    }
+    .stone-section .inspiring{
+        width: 312px;
+        padding-left: 16px;
+        top: 260px;
+        right: 80px;
+    }
+    
+    .stone-section .empathetic{
+        width: 304px;
+        padding-right: 16px;
+        top: 357px;
+        left: 81px;
+    }
+    
+    .stone-section .meaningful{
+        width: 316px;
+        top: 560px;
+        right: 140px;
+    }
+}
+
+@media (max-width:1140px) {
+    .stone-section .style h2{
+        font-size: 36px;
+    }
+    
+    .stone-section .style p{
+        font-size: 18px;
+    }
+    .stone-section .inspiring{
+        top: 260px;
+        right: 36px;   
+    }
+    .stone-section .empathetic{
+        top: 357px;
+        left: 14px;
+    }
+    .stone-section .meaningful{
+        top: 560px;
+        right: 70px;
+    }
+}
+
+@media (max-width:1024px) {
+    .stone-section .style h2{
+        font-size: 32px;
+    }
+    .stone-section .style p{
+        font-size: 16px;
+    }
+    .stone-section .inspiring{
+        width: 254px;
+        top: 264px;
+        right: 36px;   
+    }
+    .stone-section .empathetic{
+        width: 231px;
+        top: 362px;
+        left: 43px;
+    }
+    .stone-section .meaningful{
+        width: 248px;
+        top: 564px;
+        right: 70px;
+    }
+}
+
+@media (max-width:860px) {
+    .stone-section{
+        align-items: flex-start;
+    }
+    .stone-section .stone-svg{
+        height: 640px;
+        width: 560px;
+        background: center / cover no-repeat url(../element/picutre/stone-with-line-sm.svg);
+        background-position: top 0px left -50px;
+    }
+    .stone-section .inspiring{
+        width: 286px;
+        top: 277px;
+        right: 36px;
+    }
+    .stone-section .empathetic{
+        width: 231px;
+        top: 560px;
+        right: 80px;
+        padding: 0 0 0 16px;
+        left: auto;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .stone-section .meaningful{
+        width: 290px;
+        top: 845px;
+        right: 56px;
+    }
+}
+
+@media (max-width:768px) {
+
+}
+
+@media (max-width:640px) {
+    .stone-section .style h2{
+        font-size: 28px;
+    }
+    .stone-section .style p{
+        font-size: 16px;
+    }
+    .stone-section .stone-svg{
+        height: 593px;
+        width: 483px;
+        background-position: top 0px left -170px;
+    }
+    .stone-section .inspiring{
+        width: 286px;
+        top: 277px;
+        right: 28px;
+    }
+    .stone-section .empathetic{
+        width: 275px;
+        top: 537px;
+        right: 26px;
+    }
+    .stone-section .meaningful{
+        width: 290px;
+        top: 800px;
+        right: 32px;
+    }
+}
+
+@media (max-width:480px) {
+    .stone-section .style h2{
+        font-size: 24px;
+    }
 }
 
 /* -------- Testimonial Swiper ------- */
@@ -190,7 +386,7 @@ body{
 .testimonial-section .swiper-button-next:hover{
     width: 54px;
     height: 12px;
-    transition: all 500 ease;
+    transition: all 300ms ease;
 }
 
 .testimonial-section .swiper-button-prev{
@@ -223,6 +419,9 @@ body{
         height: 186px;
         border-radius: 100%;
         margin-bottom: 27px;
+    }
+    .details{
+        width: 100%;
     }
     .name{
         align-self: stretch;
@@ -266,6 +465,106 @@ body{
     font-weight: 300;
     line-height: 150%; /* 30px */
     letter-spacing: 0.2px;
+}
+
+@media (max-width:1366px) {
+    .testimonial-section .swiper{
+        width: 85%;
+        overflow: visible;
+    }
+    .testimonial-section .swiper-slide{
+        padding: 0 64px 48px;
+    }
+}
+
+@media (max-width:1024px) {
+    .testimonial-section .swiper{
+        width: 85%;
+        overflow: visible;
+    }
+    .testimonial-section .swiper-slide{
+        padding: 0 36px 36px;
+    }
+    .testimonial-section .comment-box{
+        padding: 40px;
+        gap: 40px;
+    }
+    .comment-box .comment h2{
+        font-size: 28px;
+    }
+    .comment-box .comment p{
+        font-size: 18px;
+    }
+    .comment-box .client{
+        .profile{
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+        .name{
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+        .project-type{
+            font-size: 16px;
+        }
+    }
+    .testimonial-section .swiper-button-prev,
+    .testimonial-section .swiper-button-next{
+        display: none; 
+    }   
+}
+
+@media (max-width:768px) {
+    .testimonial-section{
+        gap: 48px;
+    }
+    .testimonial-section .swiper{
+        width: 90%;
+        overflow: visible;
+    }
+    .testimonial-section .swiper-slide{
+        padding: 0 12px 36px;
+    }
+    .comment-box .comment h2{
+        font-size: 24px;
+    }
+    .comment-box .comment p{
+        font-size: 16px;
+    }
+    .testimonial-section .comment-box{
+        padding: 24px 16px;
+        gap: 24px;
+        flex-direction: column;
+    }
+    .comment-box .client{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 12px;
+    
+        .profile{
+            width: 51px;
+            height: 44px;
+            border-radius: 44px;
+            margin-bottom: 0px;
+        }
+
+        .details{
+            display: flex;
+            flex-direction: column;
+        }
+        .name{
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+        .project-type{
+            text-align: left;
+            font-size: 16px;
+        }
+    }
 }
 
 /* -------- Workflow Section ------- */
