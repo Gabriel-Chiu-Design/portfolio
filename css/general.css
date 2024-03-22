@@ -179,7 +179,7 @@ body{
 	color: var(--white-75);
 }
 
-li a.active{
+.header .nav li a.active{
 	color: var(--white-90);
 	padding-bottom: 4px;
 	border-bottom: solid 1.5px var(--white-90);
