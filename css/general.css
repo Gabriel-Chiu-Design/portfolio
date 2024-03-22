@@ -289,11 +289,10 @@ body{
 	.header .logo-section{
 		flex:1 0 0;
 		padding-right: 16px;
-
-		p{
-			width: 100%;
-			text-align: center;
-		}
+	}
+	.header .logo-section p{
+		width: 100%;
+		text-align: center;
 	}
 	.header .logo-section .logo{
 		width: 52px;
