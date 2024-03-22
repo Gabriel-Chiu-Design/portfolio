@@ -25,7 +25,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    cursor: url(../elements/icons/cursor-default.png),auto;
 }
 ol, ul {
 	list-style: none;
@@ -55,48 +54,48 @@ a{
 
 @font-face {
 	font-family: 'Sk-Modernist';
-	  src: url('fonts/Sk-Modernist-Regular.eot'); /* IE9 Compat Modes */
-	  src: url('fonts/Sk-Modernist-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		  url('fonts/Sk-Modernist-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-		  url('fonts/Sk-Modernist-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-		  url('fonts/Sk-Modernist-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-		  url('fonts/Sk-Modernist-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+	  src: url('../fonts/Sk-Modernist-Regular.eot'); /* IE9 Compat Modes */
+	  src: url('../fonts/Sk-Modernist-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		  url('../fonts/Sk-Modernist-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+		  url('../fonts/Sk-Modernist-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+		  url('../fonts/Sk-Modernist-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+		  url('../fonts/Sk-Modernist-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 	  font-weight: normal;
 	  font-style: normal;
   }
 
 @font-face {
 	font-family: 'Sk-Modernist';
-	  src: url('fonts/Sk-Modernist-Light.eot'); /* IE9 Compat Modes */
-	  src: url('fonts/Sk-Modernist-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		  url('fonts/Sk-Modernist-Light.woff2') format('woff2'), /* Super Modern Browsers */
-		  url('fonts/Sk-Modernist-Light.woff') format('woff'), /* Pretty Modern Browsers */
-		  url('fonts/Sk-Modernist-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-		  url('fonts/Sk-Modernist-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+	  src: url('../fonts/Sk-Modernist-Light.eot'); /* IE9 Compat Modes */
+	  src: url('../fonts/Sk-Modernist-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		  url('../fonts/Sk-Modernist-Light.woff2') format('woff2'), /* Super Modern Browsers */
+		  url('../fonts/Sk-Modernist-Light.woff') format('woff'), /* Pretty Modern Browsers */
+		  url('../fonts/Sk-Modernist-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+		  url('../fonts/Sk-Modernist-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
 	  font-weight: 300;
 	  font-style: normal;
   }
 
 @font-face {
 	font-family: 'Sk-Modernist';
-	  src: url('fonts/Sk-Modernist-Bold.eot'); /* IE9 Compat Modes */
-	  src: url('fonts/Sk-Modernist-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		  url('fonts/Sk-Modernist-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-		  url('fonts/Sk-Modernist-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-		  url('fonts/Sk-Modernist-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-		  url('fonts/Sk-Modernist-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+	  src: url('../fonts/Sk-Modernist-Bold.eot'); /* IE9 Compat Modes */
+	  src: url('../fonts/Sk-Modernist-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		  url('../fonts/Sk-Modernist-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+		  url('../fonts/Sk-Modernist-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+		  url('../fonts/Sk-Modernist-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		  url('../fonts/Sk-Modernist-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
 	  font-weight: bold;
 	  font-style: normal;
   }
 
 @font-face {
 	font-family: 'Sk-Modernist Mono';
-	  src: url('fonts/Sk-Modernist-Mono.eot'); /* IE9 Compat Modes */
-	  src: url('fonts/Sk-Modernist-Mono.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		  url('fonts/Sk-Modernist-Mono.woff2') format('woff2'), /* Super Modern Browsers */
-		  url('fonts/Sk-Modernist-Mono.woff') format('woff'), /* Pretty Modern Browsers */
-		  url('fonts/Sk-Modernist-Mono.ttf')  format('truetype'), /* Safari, Android, iOS */
-		  url('fonts/Sk-Modernist-Mono.svg#svgFontName') format('svg'); /* Legacy iOS */
+	  src: url('../fonts/Sk-Modernist-Mono.eot'); /* IE9 Compat Modes */
+	  src: url('../fonts/Sk-Modernist-Mono.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		  url('../fonts/Sk-Modernist-Mono.woff2') format('woff2'), /* Super Modern Browsers */
+		  url('../fonts/Sk-Modernist-Mono.woff') format('woff'), /* Pretty Modern Browsers */
+		  url('../fonts/Sk-Modernist-Mono.ttf')  format('truetype'), /* Safari, Android, iOS */
+		  url('../fonts/Sk-Modernist-Mono.svg#svgFontName') format('svg'); /* Legacy iOS */
 	  font-weight: normal;
 	  font-style: normal;
   }
