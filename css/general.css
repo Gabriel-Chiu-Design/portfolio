@@ -169,20 +169,20 @@ body{
 	display: flex;
 	justify-content: flex-end;
 	gap: 24px;
+}
 
-	li a{
-		color: var(--white-50);
-	}
+.header .nav li a{
+	color: var(--white-50);
+}
 
-	li a:hover{
-		color: var(--white-75);
-	}
+.header .nav li a:hover{
+	color: var(--white-75);
+}
 
-	li a.active{
-		color: var(--white-90);
-		padding-bottom: 4px;
-		border-bottom: solid 1.5px var(--white-90);
-	}
+.header .nav li a.active{
+	color: var(--white-90);
+	padding-bottom: 4px;
+	border-bottom: solid 1.5px var(--white-90);
 }
 
 .header .side-menu-icon{
