@@ -265,26 +265,30 @@
 }
 
 @media (max-width:1024px) {
+    .stone-section{
+        gap: 80px;
+    }
     .stone-section .style h2{
         font-size: 32px;
     }
+
     .stone-section .style p{
         font-size: 16px;
     }
     .stone-section .inspiring{
         width: 254px;
-        top: 264px;
-        right: 36px;   
+        top: 204px;
+        right: 17px;
     }
     .stone-section .empathetic{
         width: 231px;
-        top: 362px;
-        left: 43px;
+        top: 300px;
+        left: 29px;
     }
     .stone-section .meaningful{
         width: 248px;
-        top: 564px;
-        right: 70px;
+        top: 504px;
+        right: 92px;
     }
 }
 
@@ -299,14 +303,14 @@
         background-position: top 0px left -50px;
     }
     .stone-section .inspiring{
-        width: 286px;
-        top: 277px;
-        right: 36px;
+        width: 280px;
+        top: 218px;
+        right: 80px;
     }
     .stone-section .empathetic{
         width: 231px;
-        top: 560px;
-        right: 80px;
+        top: 500px;
+        right: 99px;
         padding: 0 0 0 16px;
         left: auto;
         text-align: left;
@@ -314,22 +318,43 @@
     }
     .stone-section .meaningful{
         width: 290px;
-        top: 845px;
-        right: 56px;
+        top: 784px;
+        right: 77px;
     }
 }
 
 @media (max-width:768px) {
-
-}
-
-@media (max-width:640px) {
+    .stone-section{
+        gap: 48px;
+    }
     .stone-section .style h2{
         font-size: 28px;
     }
     .stone-section .style p{
         font-size: 16px;
     }
+    .stone-section .inspiring{
+        width: 240px;
+        top: 164px;
+        right: 80px;
+    }
+    .stone-section .empathetic{
+        width: 231px;
+        top: 448px;
+        right: 64px;
+        padding: 0 0 0 16px;
+        left: auto;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .stone-section .meaningful{
+        width: 290px;
+        top: 733px;
+        right: 54px;
+    }
+}
+
+@media (max-width:640px) {
     .stone-section .stone-svg{
         height: 593px;
         width: 483px;
@@ -337,24 +362,97 @@
     }
     .stone-section .inspiring{
         width: 286px;
-        top: 277px;
+        top: 160px;
         right: 28px;
     }
     .stone-section .empathetic{
         width: 275px;
-        top: 537px;
+        top: 424px;
         right: 26px;
     }
     .stone-section .meaningful{
         width: 290px;
-        top: 800px;
+        top: 688px;
         right: 32px;
     }
 }
 
 @media (max-width:480px) {
+    .stone-section .stone-svg{
+        height: 540px;
+        width: 480px;   
+        background-position: top 0px left -131px;
+    }
     .stone-section .style h2{
         font-size: 24px;
+    }
+    
+    .stone-section .inspiring{
+        width: 240px;
+        top: 160px;
+        right: 36px;
+    }
+    .stone-section .empathetic{
+        width: 240px;
+        top: 396px;
+        right: 16px;
+    }
+    .stone-section .meaningful{
+        width: 240px;
+        top: 636px;
+        right: 36px;
+    }
+}
+
+@media (max-width:414px) {
+    .stone-section .stone-svg{
+        height: 480px;
+        width: 400px;   
+        background-position: top 0px left -154px;
+    }
+    .stone-section .style h2{
+        font-size: 20px;
+    }
+    .stone-section .inspiring{
+        width: 240px;
+        top: 150px;
+        right: 16px;
+    }
+    .stone-section .empathetic{
+        width: 240px;
+        top: 366px;
+        right: 8px;
+    }
+    .stone-section .meaningful{
+        width: 240px;
+        top: 578px;
+        right: 16px;
+    }
+}
+
+@media (max-width:360px) {
+    .stone-section .stone-svg{
+        height: 360px;
+        width: 300px;
+        background-position: top 0px left -110px;
+    }
+    .stone-section .style p{
+        font-size: 14px;
+    }
+    .stone-section .inspiring{
+        width: 200px;
+        top: 140px;
+        right: 20px;
+    }
+    .stone-section .empathetic{
+        width: 200px;
+        top: 300px;
+        right: 8px;
+    }
+    .stone-section .meaningful{
+        width: 200px;
+        top: 460px;
+        right: 16px;
     }
 }
 

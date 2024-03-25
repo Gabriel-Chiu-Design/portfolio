@@ -348,6 +348,7 @@ body{
 @media (max-width:768px) {
 	.section-title-box{
 		gap: 4px;
+		padding: 0 16px;
 	}
 	.section-title-box .title{
 		font-size: 36px;
