@@ -1,7 +1,3 @@
-.wrap{
-    overflow-x: hidden !important;
-}
-
 /* -------- hero-section -------- */
 
 .hero-section{
@@ -10,7 +6,7 @@
     justify-content: center;
     align-items: center;
     gap: 28px;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     gap: 72px;
     position: relative;
@@ -45,6 +41,13 @@
 
     position: absolute;
     top: 0;
+}
+
+@media (max-width:1440px) {
+    .hero-section{
+        height: fit-content;
+        padding: 72px 0 72px;
+    }
 }
 
 @media (max-width:1024px) {
@@ -131,7 +134,7 @@
     overflow: visible;
 }
 
-@media (max-width:1366px) {
+@media (max-width:1440px) {
     .footer{
         padding: 0px 48px;
     }
@@ -162,6 +165,7 @@
     position: relative;
     width: 100%;
     gap: 120px;
+    margin: 100px 0 100px;
 }
 
 .stone-section .stone-svg{
@@ -216,7 +220,10 @@
     background-color: var(--black-85);
 }
 
-@media (max-width:1366px) {
+@media (max-width:1440px) {
+    .stone-section{
+        margin: 80px 0 80px;
+    }
     .stone-section .stone-svg{
         width: 480px;
         height: 480px;
@@ -265,6 +272,9 @@
 }
 
 @media (max-width:1024px) {
+    .stone-section{
+        margin: 64px 0 64px;
+    }
     .stone-section{
         gap: 80px;
     }
@@ -326,6 +336,7 @@
 @media (max-width:768px) {
     .stone-section{
         gap: 48px;
+        margin: 48px 0 48px;
     }
     .stone-section .style h2{
         font-size: 28px;
@@ -405,6 +416,10 @@
 }
 
 @media (max-width:414px) {
+    .stone-section{
+        gap: 48px;
+        margin: 36px 0 36px;
+    }
     .stone-section .stone-svg{
         height: 480px;
         width: 400px;   
@@ -464,6 +479,7 @@
     width: 100%;
     gap: 80px;
     overflow: hidden;
+    margin: 100px 0 100px;
 }
 
 .testimonial-section .swiper{
@@ -575,7 +591,10 @@
     letter-spacing: 0.2px;
 }
 
-@media (max-width:1366px) {
+@media (max-width:1440px) {
+    .testimonial-section{
+        margin: 80px 0 80px;
+    }
     .testimonial-section .swiper{
         width: 85%;
         overflow: visible;
@@ -586,6 +605,9 @@
 }
 
 @media (max-width:1024px) {
+    .testimonial-section{
+        margin: 64px 0 64px;
+    }
     .testimonial-section .swiper{
         width: 85%;
         overflow: visible;
@@ -603,19 +625,17 @@
     .comment-box .comment p{
         font-size: 18px;
     }
-    .comment-box .client{
-        .profile{
-            width: 120px;
-            height: 120px;
-            margin-bottom: 20px;
-        }
-        .name{
-            font-size: 18px;
-            margin-bottom: 4px;
-        }
-        .project-type{
-            font-size: 16px;
-        }
+    .comment-box .client .profile{
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+    .comment-box .client .name{
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+    .comment-box .client .project-type{
+        font-size: 16px;
     }
     .testimonial-section .swiper-button-prev,
     .testimonial-section .swiper-button-next{
@@ -626,6 +646,7 @@
 @media (max-width:768px) {
     .testimonial-section{
         gap: 48px;
+        margin: 48px 0 48px;
     }
     .testimonial-section .swiper{
         width: 90%;
@@ -651,27 +672,32 @@
         flex-direction: row;
         align-items: flex-start;
         gap: 12px;
-    
-        .profile{
-            width: 51px;
-            height: 44px;
-            border-radius: 44px;
-            margin-bottom: 0px;
-        }
+    }
+    .comment-box .client .profile{
+        width: 51px;
+        height: 44px;
+        border-radius: 44px;
+        margin-bottom: 0px;
+    }
 
-        .details{
-            display: flex;
-            flex-direction: column;
-        }
-        .name{
-            text-align: left;
-            font-size: 18px;
-            margin-bottom: 4px;
-        }
-        .project-type{
-            text-align: left;
-            font-size: 16px;
-        }
+    .comment-box .client .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .comment-box .client .name{
+        text-align: left;
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+    .comment-box .client .project-type{
+        text-align: left;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:440px) {
+    .testimonial-section{
+        margin: 36px 0 36px;
     }
 }
 
@@ -684,6 +710,7 @@
     width: 100%;
     gap: 120px;
     margin-bottom: 120px;
+    margin: 100px 0 100px;
 }
 
 .workflow-section .flow-list{
@@ -757,16 +784,26 @@
     list-style-position: inside;
 }
 
-@media (max-width:1366px) {
+@media (max-width:1440px) {
     .workflow-section{
         padding: 0 48px;
+        margin: 80px 0 80px;
+    }
+    .workflow-section .flow .flow-brief h2{
+        font-size: 32px;
+    }
+    .workflow-section .flow .flow-brief p{
+        font-size: 20px;
+    }
+    .workflow-section .flow .flow-details{
+        font-size: 18px;
     }
 }
 
 @media (max-width:1024px) {
     .workflow-section{
         gap: 80px;
-        margin-bottom: 120px;
+        margin: 64px 0 64px;
     }
     .workflow-section .flow-list{
         gap: 48px;
@@ -779,10 +816,10 @@
         font-size: 32px;
     }
     .workflow-section .flow .flow-brief p{
-        font-size: 20px;
+        font-size: 18px;
     }
     .workflow-section .flow .flow-details{
-        font-size: 18px;
+        font-size: 16px;
     }
     .workflow-section .flow .stone{
         width: 160px;
@@ -797,6 +834,7 @@
 @media (max-width:768px) {
     .workflow-section{
         padding: 0 16px;
+        margin: 48px 0 48px;
     }
     .workflow-section .flow{
         gap: 16px;
@@ -826,6 +864,7 @@
 @media (max-width:440px) {
     .workflow-section .flow-list{
         gap: 48px;
+        margin: 36px 0 36px;
     }
     .workflow-section .flow{
         gap: 0px;

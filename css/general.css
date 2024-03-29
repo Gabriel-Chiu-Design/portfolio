@@ -123,7 +123,6 @@ body{
 	align-items: center;
 	max-width: 1366px;
 	margin: 0 auto;
-	gap:200px;
 }
 
 /* -------- top-navigation -------- */
@@ -134,8 +133,9 @@ body{
 	align-items: center;
 	width: 100%;
 	background: linear-gradient(180deg, #262626 0%, rgba(38, 38, 38, 0.00) 100%);
-	position: fixed;
-	top:0;
+	position: sticky;
+	position: -webkit-sticky;
+	top:0px;
 	z-index: 99;
 }
 
@@ -327,7 +327,7 @@ body{
     font-style: normal;
 }
 
-@media (max-width:1366px) {
+@media (max-width:1440px) {
 	.section-title-box .title{
 		font-size: 64px;
 	}
@@ -352,6 +352,19 @@ body{
 	}
 	.section-title-box .title{
 		font-size: 36px;
+	}
+	.section-title-box .caption{
+		font-size: 16px;
+	}
+}
+
+@media (max-width:440px) {
+	.section-title-box{
+		gap: 4px;
+		padding: 0 16px;
+	}
+	.section-title-box .title{
+		font-size: 32px;
 	}
 	.section-title-box .caption{
 		font-size: 16px;
