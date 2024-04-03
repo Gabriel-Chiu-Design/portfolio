@@ -13,7 +13,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 80px;
 }
 
 .selected-projects .project-list .project{
@@ -25,17 +24,18 @@
     justify-content: flex-end;
     position: relative;
     overflow: hidden;
+    margin-bottom: 24px;
 }
 
 .selected-projects .project-list .project h2{
     color: var(--white-90);
-    font-size: 36px;
-    margin-bottom: 8px;
+    font-size: 28px;
+    margin-bottom: 4px;
 }
 
 .selected-projects .project-list .project p{
     color: var(--white-50);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 120%;
 }
@@ -109,6 +109,10 @@
     --percentage:-20%;
     transition: all 0.5s ease-out;
     cursor: pointer;
+
+    p{
+        padding-bottom: 8px;
+    }
 
     .details{
         border-top: solid 1.5px var(--white-50) ;
@@ -223,7 +227,7 @@
 
 .other-projects .project-list .project p{
     color: var(--white-50);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 120%;
 }

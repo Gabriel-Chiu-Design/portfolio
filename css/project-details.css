@@ -7,6 +7,7 @@ body{
 
 .header{
     max-width: none;
+    position: fixed;
     transition: all 0.5s;
 }
 
@@ -24,24 +25,28 @@ body{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.00) 36.12%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 66.35%, rgba(0, 0, 0, 0.75) 100%), center center / cover no-repeat url(../element/picutre/uiux-selected-1.png);
 }
 
-.cover h2{
-    max-width: 1366px;
-    width: 100%;
-    color: var(--white-90, #E6E6E6);
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+@media (max-width:1440px) {
+    .cover{
+        height: 480px;
+    }
 }
 
-.cover p{
-    max-width: 1366px;
-    width: 100%;
-    color: var(--white-75, #BFBFBF);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+@media (max-width:1024px) {
+    .cover{
+        height: 400px;
+    }
+}
+
+@media (max-width:768px) {
+    .cover{
+        height: 360px;
+    }
+}
+
+@media (max-width:440px) {
+    .cover{
+        height: 240px;
+    }
 }
 
 /*------Case Study CSS------*/
@@ -49,8 +54,9 @@ body{
 .project-showcase{
     display: flex;
     padding: 0 48px;
-    gap: 24px;
+    gap: 96px;
     width: 100%;
+    margin-top: 48px;
 }
 
 .case-brief{
@@ -62,12 +68,28 @@ body{
     flex:1 0 0;
 
     position: sticky;
-    top: 0px;
+    top: 106px;
+}
+
+.case-brief h2{
+    color: var(--white-90, #E6E6E6);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.case-brief h4{
+    color: var(--white-75, #BFBFBF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
 
 .subtitle{
     margin-bottom: 8px;
-    padding: 48px 0 4px;
+    padding: 16px 0 4px;
     border-bottom: 1.5px solid var(--white-90, #E6E6E6);
 
     color: var(--white-90, #E6E6E6);
@@ -81,7 +103,7 @@ body{
 
 .case-details .subtitle{
     position: sticky;
-    top: 0px;
+    top: 106px;
 }
 
 .case-brief .box{
@@ -92,16 +114,20 @@ body{
     top: 0;
 }
 
+.case-brief .title.box{
+    margin-bottom: 16px;
+}
+
 .case-brief h3{
-    color: var(--white-90, #E6E6E6);
-    font-size: 18px;
+    color: var(--white-50);
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
 .case-brief p, .case-brief li{
-    color: var(--white-75, #E6E6E6);
+    color: var(--white-90, #E6E6E6);
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -118,36 +144,12 @@ body{
     letter-spacing: 0.32px;
 }
 
-.case-brief .contact{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 4px 16px 4px 0;
-    gap: 8px;
-    border-radius: 8px;
-    margin-top: 24px;
 
-    color: var(--black-85);
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 125%;
-    background-color: var(--white-90);
-}
-
-.case-brief .contact:hover{
-    color: var(--white-90);
-    background-color: var(--main);
-    
-    img{
-        content: url(../element/icon/contact-hover.svg);
-    }
-}
-
-.case-brief .back{
+.case-brief .btn{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 16px 4px 0;
+    padding: 8px 8px 8px 16px;
     gap: 8px;
     border-radius: 8px;
     margin-top: 12px;
@@ -159,12 +161,17 @@ body{
     background-color: var(--black-80);
 }
 
-.case-brief .back:hover{
+.case-brief a span{
+    flex: 1 0 0;
+}
+
+
+.case-brief .btn:hover{
     color: var(--white-75);
     background-color: var(--black-70);
     
     img{
-        content: url(../element/icon/subdirectory-arrow-left-hover.svg);
+        content: url(../element/icon/chevron-right-hover.svg);
     }
 }
 
@@ -180,7 +187,8 @@ body{
     flex-direction: column;
     gap: 24px;
     align-self: stretch;
-    flex:1 0 0;
+    flex: 1 0 0;
+    padding-top: 16px;
 }
 
 .case-details .box{
@@ -215,7 +223,7 @@ body{
 
 .case-details p{
     color: var(--white-75);
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 300;
     line-height: 140%; /* 22.4px */
@@ -227,6 +235,104 @@ body{
     font-style: normal;
     font-weight: 300;
     line-height: 140%; /* 22.4px */
+}
+
+@media (max-width:1440px) {
+    .project-showcase{
+        padding: 0 48px;
+        gap: 48px;
+        margin-top: 24px;
+    }
+    .case-brief{
+        gap: 16px;
+        flex:1 0 0;
+        top: 106px;
+    }
+    .case-brief h2{
+        font-size: 32px;
+    }
+    .case-brief h4{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1024px) {
+    .project-showcase{
+        flex-direction: column;
+        padding: 0 24px;
+        gap: 48px;
+        margin-top: 24px;
+    }
+    .case-brief{
+        max-width: none;
+        width: 100%;
+        gap: 1%;
+        flex:1 0 0;
+        top: 106px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .case-brief h2{
+        font-size: 32px;
+    }
+    .case-brief h4{
+        font-size: 16px;
+    }
+    .case-brief .box.title{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .case-brief .box.details{
+        flex: 1 0 0;
+        margin-bottom: 12px;
+    }
+    .case-brief .box.links{
+        flex-direction: row;
+        width: 100%;
+        gap: 12px;
+    }
+    .case-brief .box.links a{
+        flex: 1 0 0;
+    }
+}
+
+@media (max-width:768px) {
+    .project-showcase{
+        gap: 24px;
+        margin-top: 24px;
+    }
+    .case-brief h2{
+        font-size: 32px;
+    }
+    .case-brief h4{
+        font-size: 16px;
+    }
+    .case-brief .box.title{
+        width: 100%;
+    }
+    .case-brief .box.details{
+        width: 49%;
+        margin-bottom: 12px;
+        flex: none;
+    }
+    .case-brief .box.links{
+        flex-direction: column;
+        width: 100%;
+        gap: 0px;
+    }
+}
+
+@media (max-width:440px) {
+    .project-showcase{
+        padding: 0 16px;
+        margin-top: 16px;
+    }
+    .case-brief h2{
+        font-size: 28px;
+    }
+    .case-brief .box.details{
+        width: 100%;
+    }
 }
 
 /*------ Other Fixed Elements ------*/
