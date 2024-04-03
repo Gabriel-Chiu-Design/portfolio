@@ -273,7 +273,7 @@
 
 @media (max-width:1024px) {
     .stone-section{
-        margin: 64px 0 64px;
+        margin: 64px 0 120px;
     }
     .stone-section{
         gap: 80px;
@@ -336,7 +336,7 @@
 @media (max-width:768px) {
     .stone-section{
         gap: 48px;
-        margin: 48px 0 48px;
+        margin: 48px 0 120px;
     }
     .stone-section .style h2{
         font-size: 28px;
@@ -418,7 +418,7 @@
 @media (max-width:414px) {
     .stone-section{
         gap: 48px;
-        margin: 36px 0 36px;
+        margin: 36px 0 120px;
     }
     .stone-section .stone-svg{
         height: 480px;
@@ -806,7 +806,7 @@
         margin: 64px 0 64px;
     }
     .workflow-section .flow-list{
-        gap: 48px;
+        gap: 80px;
     }
     .workflow-section .flow{
         padding-left: 0px;
@@ -835,12 +835,13 @@
     .workflow-section{
         padding: 0 16px;
         margin: 48px 0 48px;
+        gap: 48px;
     }
     .workflow-section .flow{
         gap: 16px;
     }
     .workflow-section .flow-list{
-        gap: 80px;
+        gap: 64px;
     }
     .workflow-section .flow .flow-brief h2{
         font-size: 24px;
@@ -874,6 +875,15 @@
     .workflow-section .flow .stone {
         width: 100px;
         height: 100px;   
+    }
+    .workflow-section .flow .flow-brief h2{
+        font-size: 20px;
+    }
+    .workflow-section .flow .flow-brief p{
+        font-size: 16px;
+    }
+    .workflow-section .flow .flow-details{
+        font-size: 14px;
     }
     .workflow-section .flow .stone img{
         width: 160px;
