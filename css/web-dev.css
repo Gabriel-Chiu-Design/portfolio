@@ -42,7 +42,7 @@
 
 .selected-projects .project-list .project .details{
     height: 0px;
-    width: 50%;
+    width: 75%;
     overflow: hidden;
     border-top: solid 1.5px transparent ;
     font-size: 18px;
