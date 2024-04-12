@@ -22,7 +22,30 @@ body{
     height: 640px;
     padding: 24px 48px;
     gap: 8px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.00) 36.12%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 66.35%, rgba(0, 0, 0, 0.75) 100%), center center / cover no-repeat url(../element/picutre/uiux-selected-1.png);
+}
+
+.cover.zen{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.00) 36.12%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 66.35%, rgba(0, 0, 0, 0.75) 100%), center center / cover no-repeat 
+    /*change the url here*/
+    url(../element/projects/zen/project-cover.png);
+}
+
+.cover.caiyi{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.00) 36.12%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 66.35%, rgba(0, 0, 0, 0.75) 100%), center center / cover no-repeat 
+    /*change the url here*/
+    url(../element/projects/caiyi/project-cover.png);
+}
+
+.cover.churchplus{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.00) 36.12%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 66.35%, rgba(0, 0, 0, 0.75) 100%), center center / cover no-repeat 
+    /*change the url here*/
+    url(../element/projects/churchplus/project-cover.png);
+}
+
+.cover.uneo{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.00) 36.12%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 66.35%, rgba(0, 0, 0, 0.75) 100%), center center / cover no-repeat 
+    /*change the url here*/
+    url(../element/projects/uneo/project-cover.png);
 }
 
 @media (max-width:1440px) {
@@ -73,7 +96,7 @@ body{
 
 .case-brief h2{
     color: var(--white-90, #E6E6E6);
-    font-size: 40px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -81,7 +104,7 @@ body{
 
 .case-brief h4{
     color: var(--white-75, #BFBFBF);
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -116,6 +139,7 @@ body{
 
 .case-brief .title.box{
     margin-bottom: 16px;
+    gap: 12px;
 }
 
 .case-brief h3{
@@ -126,7 +150,7 @@ body{
     line-height: normal;
 }
 
-.case-brief p, .case-brief li{
+.case-brief p{
     color: var(--white-90, #E6E6E6);
     font-size: 16px;
     font-style: normal;
@@ -206,8 +230,8 @@ body{
 
 .case-details h3{
     color: var(--white-90);
-    font-family: 'Sk-Modernist Mono';
-    font-size: 20px;
+
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -215,13 +239,18 @@ body{
 
 .case-details h4{
     color: var(--white-90);
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.case-details p{
+.case-details ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.case-details p, .case-details li{
     color: var(--white-75);
     font-size: 18px;
     font-style: normal;

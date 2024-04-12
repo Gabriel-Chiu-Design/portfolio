@@ -492,7 +492,7 @@
 .selected-projects .project-list .project{
     display: flex;
     width: 49%;
-    height: 400px;
+    height: 360px;
     padding: 24px;
     margin-bottom: 2%;
     flex-direction: column;
@@ -531,14 +531,36 @@
 }
 
 .selected-projects .project-list .project.prj-1{
+    --size:100%;
     --percentage:0%;
-    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat url(../element/picutre/other-projects-cover-test.png);
-    background-size: 100%;
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat url(../element/projects/zen/project-cover.png);
+    background-size: var(--size);
+}
+
+.selected-projects .project-list .project.prj-2{
+    --size:110%;
+    --percentage:0%;
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat url(../element/projects/caiyi/project-cover.png);
+    background-size: var(--size);
+}
+
+.selected-projects .project-list .project.prj-3{
+    --size:100%;
+    --percentage:0%;
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat url(../element/projects/churchplus/project-cover.png);
+    background-size: var(--size);
+}
+
+.selected-projects .project-list .project.prj-4{
+    --size:100%;
+    --percentage:0%;
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 120%), center center / cover no-repeat url(../element/projects/uneo/project-cover.png);
+    background-size: var(--size);
 }
 
 .selected-projects .project-list .project:hover{
     --percentage:-25%;
-    background-size: 110%;
+    background-size: calc(var(--size) + 10%);
     transition: all 0.5s ease-out;
     cursor: pointer;
 
@@ -593,10 +615,10 @@
         gap: 4px;
     }
     .selected-projects .project-list .project h3{
-        font-size: 20px;
+        font-size: 18px;
     }
     .selected-projects .project-list .project p{
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
