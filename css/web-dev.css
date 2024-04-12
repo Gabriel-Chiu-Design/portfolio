@@ -74,7 +74,7 @@
     linear-gradient(180deg, rgba(102, 102, 102, 0.00) var(--percentage), #000 100%), 
     
     /* change the project cover here*/
-    center center / cover no-repeat url(../element/picutre/uiux-selected-1.png),
+    center center / cover no-repeat url(../element/projects/zen/project-cover.png),
 
      lightgray 50% / cover no-repeat;
     background-size: 100%;
@@ -86,7 +86,7 @@
     linear-gradient(180deg, rgba(102, 102, 102, 0.00) var(--percentage), #000 100%), 
     
     /* change the project cover here*/
-    center center / cover no-repeat url(../element/picutre/uiux-selected-2.png),
+    center center / cover no-repeat url(../element/projects/caiyi/project-cover.png),
 
      lightgray 50% / cover no-repeat;
      background-size: 100%;
@@ -98,7 +98,19 @@
     linear-gradient(180deg, rgba(102, 102, 102, 0.00) var(--percentage), #000 100%), 
 
     /* change the project cover here*/
-    center center / cover no-repeat url(../element/picutre/uiux-selected-3.png),
+    center center / cover no-repeat url(../element/projects/churchplus/project-cover.png),
+
+     lightgray 50% / cover no-repeat;
+     background-size: 100%;
+}
+
+.selected-projects .project-list .project.project-4{
+    --percentage: 42%;
+    background: 
+    linear-gradient(180deg, rgba(102, 102, 102, 0.00) var(--percentage), #000 100%), 
+
+    /* change the project cover here*/
+    center center / cover no-repeat url(../element/projects/uneo/project-cover.png),
 
      lightgray 50% / cover no-repeat;
      background-size: 100%;
