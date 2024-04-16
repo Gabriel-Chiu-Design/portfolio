@@ -713,7 +713,9 @@
     width: 186px;
     height: 186px;
     border-radius: 100%;
-    margin-bottom: 27px;
+    margin-bottom: 27px;    
+    object-fit: contain;
+    padding: 0 16px;
 }
 
 .comment-box .client .details{
@@ -735,10 +737,6 @@
     text-align: center;
     font-size: 16px;
     font-weight: 300;
-}
-
-.comment-box.comment01 .profile{
-    background: center / cover no-repeat url(../element/picutre/testimonial-profile.jpg);
 }
 
 .comment-box .comment{
@@ -835,7 +833,7 @@
         font-size: 16px;
     }
     .testimonial-section .comment-box{
-        padding: 24px 16px;
+        padding: 24px;
         gap: 24px;
         flex-direction: column;
     }
@@ -847,10 +845,11 @@
         gap: 12px;
     }
     .comment-box .client .profile{
-        width: 51px;
-        height: 44px;
+        width: 36px;
+        height: 36px;
         border-radius: 44px;
         margin-bottom: 0px;
+        padding: 0;
     }
 
     .comment-box .client .details{
@@ -859,12 +858,12 @@
     }
     .comment-box .client .name{
         text-align: left;
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 4px;
     }
     .comment-box .client .project-type{
         text-align: left;
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
