@@ -698,7 +698,7 @@
     display: flex;
     padding: 40px 48px;
     align-items: center;
-    gap: 40px;
+    gap: 48px;
     background-color: var(--black-70);
     height: 100%;
 }
@@ -710,12 +710,11 @@
 }
 
 .comment-box .client .profile{
-    width: 186px;
-    height: 186px;
+    width: 160px;
+    height: 160px;
     border-radius: 100%;
-    margin-bottom: 27px;    
+    margin-bottom: 20px;    
     object-fit: contain;
-    padding: 0 16px;
 }
 
 .comment-box .client .details{
