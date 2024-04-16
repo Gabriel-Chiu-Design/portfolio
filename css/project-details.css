@@ -222,6 +222,13 @@ body{
     margin-bottom: 24px;
 }
 
+.case-details .text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
 .case-details img{
     width: 100%;
     object-fit: cover;
