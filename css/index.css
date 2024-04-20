@@ -696,36 +696,36 @@
 
 .testimonial-section .comment-box{
     display: flex;
-    padding: 40px 48px;
-    align-items: center;
-    gap: 48px;
+    flex-direction: column;
+    padding: 48px;
+    gap: 24px;
     background-color: var(--black-70);
     height: 100%;
 }
 
 .comment-box .client{
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    gap: 8px;
 }
 
 .comment-box .client .profile{
-    width: 160px;
-    height: 160px;
-    border-radius: 100%;
-    margin-bottom: 20px;    
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;  
     object-fit: contain;
 }
 
 .comment-box .client .details{
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
 .comment-box .client .name{
     align-self: stretch;
     color: var(--white-90);
-    text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     margin-bottom: 4px;
 }
@@ -733,7 +733,6 @@
 .comment-box .client .project-type{
     align-self: stretch;
     color: var(--white-50);
-    text-align: center;
     font-size: 16px;
     font-weight: 300;
 }
@@ -741,21 +740,21 @@
 .comment-box .comment{
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 8px;
     flex: 1 0 0; 
 }
 
 .comment-box .comment h2{
     align-self: stretch;
     color: var(--white-90, #E6E6E6);
-    font-size: 32px;
+    font-size: 24px;
     line-height: 110%; /* 44px */
 }
 
 .comment-box .comment p{
     align-self: stretch;
     color: var(--white-75, #BFBFBF);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 150%; /* 30px */
     letter-spacing: 0.2px;
@@ -932,14 +931,14 @@
 .workflow-section .flow .flow-brief h2{
     align-self: stretch;
     color: var(--white-90);
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 400;
 }
 
 .workflow-section .flow .flow-brief p{
     align-self: stretch;
     color: var(--white-90);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 125%;
 }
@@ -947,7 +946,7 @@
 .workflow-section .flow .flow-details{
     align-self: stretch;
     color: var(--white-75);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     letter-spacing: 0.4px;
     line-height: 140%;
@@ -961,13 +960,13 @@
         margin: 80px 0 80px;
     }
     .workflow-section .flow .flow-brief h2{
-        font-size: 32px;
+        font-size: 28px;
     }
     .workflow-section .flow .flow-brief p{
-        font-size: 20px;
+        font-size: 18px;
     }
     .workflow-section .flow .flow-details{
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -982,15 +981,6 @@
     .workflow-section .flow{
         padding-left: 0px;
         gap: 48px;
-    }
-    .workflow-section .flow .flow-brief h2{
-        font-size: 32px;
-    }
-    .workflow-section .flow .flow-brief p{
-        font-size: 18px;
-    }
-    .workflow-section .flow .flow-details{
-        font-size: 16px;
     }
     .workflow-section .flow .stone{
         width: 160px;

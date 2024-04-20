@@ -168,6 +168,7 @@ body{
 .header .nav{
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 	gap: 24px;
 }
 
@@ -195,6 +196,22 @@ body{
 .header .side-menu-icon:hover{
 	cursor: pointer;
 }
+
+.header .lang{
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	color: var(--white-50);
+	font-size: 14px;
+	padding: 8px 12px;
+	background-color: var(--black-80);
+}
+
+.header #lang-option{
+	padding-bottom: 0;
+	border: none;
+}
+
 
 /* -------- side-menu -------- */
 
