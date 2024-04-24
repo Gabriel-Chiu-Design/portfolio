@@ -695,8 +695,6 @@
 }
 
 .scroll-2{
-    display: flex;
-    gap: 48px;
     animation: scroll-2 30s infinite linear;
 }
 
@@ -808,10 +806,20 @@
     .testimonial-section{
         margin: 64px 0 64px;
     }
+    .testimonial-section .comment-container{
+        gap: 36px;
+    }
     .testimonial-section .comment-box{
-        padding: 40px;
-        gap: 40px;
-    }  
+        padding: 24px;
+        gap: 16px;
+        min-width: 400px;
+    }
+    .scroll-1{
+        animation: scroll-1 20s infinite linear;
+    }
+    .scroll-2{
+        animation: scroll-2 20s infinite linear;
+    }
 }
 
 @media (max-width:768px) {
@@ -822,13 +830,31 @@
     .testimonial-section .comment-box{
         padding: 24px;
         gap: 24px;
-        flex-direction: column;
+        min-width: 320px;
+    }
+    .scroll-1{
+        animation: scroll-1 15s infinite linear;
+    }
+    .scroll-2{
+        animation: scroll-2 15s infinite linear;
     }
 }
 
 @media (max-width:440px) {
     .testimonial-section{
         margin: 36px 0 36px;
+    }
+    .testimonial-section .scroll-container{
+        gap: 24px;
+    }
+    .testimonial-section .comment-box{
+        min-width: 240px;
+    }
+    .scroll-1{
+        animation: scroll-1 10s infinite linear;
+    }
+    .scroll-2{
+        animation: scroll-2 10s infinite linear;
     }
 }
 
