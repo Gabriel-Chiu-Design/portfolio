@@ -93,10 +93,9 @@
 
 .gallery-item{
     display: none;
-    height: 320px;
+    height: 280px;
     width: 32.65%;
     margin-bottom: 24px;
-    height: 320px;
     padding: 24px;
     flex-direction: column;
     justify-content: flex-end;
@@ -149,19 +148,36 @@
 .gallery-item{
     --percentage:60%;
     background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat url(../element/picutre/other-projects-cover-test.png);
+}
+
+.gallery-item.item01{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/in-well/inwell-10.png);
+    background-size: 100%;
+}
+
+.gallery-item.item02{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/in-well/inwell-13.jpg);
+    background-size: 100%;
+}
+
+.gallery-item.item03{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/in-well/inwell-6.png);
     background-size: 100%;
 }
 
 .gallery-item.item04{
     background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
     url(../element/projects/mollifix/cover.png);
-    background-size: 100%;
+    background-size: 110%;
 }
 
 .gallery-item.item05{
     background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
     url(../element/projects/ge-travel/web-banner-5.png), #111111;
-    background-size: 100%;
+    background-size: 110%;
 }
 
 .gallery-item.item06{
@@ -184,24 +200,50 @@
 
 .gallery-item.item09{
     background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
-    url(../element/projects/in-well/inwell-10.png);
+    url(../element/projects/micomic/blade-1.png);
     background-size: 100%;
 }
 
 .gallery-item.item10{
     background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
-    url(../element/projects/in-well/inwell-13.jpg);
+    url(../element/projects/micomic/earth-1.png);
     background-size: 100%;
 }
 
 .gallery-item.item11{
     background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
-    url(../element/projects/in-well/inwell-6.png);
+    url(../element/projects/micomic/space-1.png);
     background-size: 100%;
 }
 
+.gallery-item.item12{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/510/photography.png);
+    background-size: 110%;
+}
+
+.gallery-item.item13{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/510/name-card.png);
+    background-size: 110%;
+}
+
+.gallery-item.item14{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/hkcell/04/01\ -\ Life.png);
+    background-size: 120%;
+}
+
+.gallery-item.item15{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/hkcell/12/12-01.jpg);
+    background-size: 120%;
+}
+
+/* bg-size=100% */
+
 .gallery-item:hover{
-    --percentage:-25%;
+    --percentage:-10%;
     background-size: 110%;
     transition: all 0.5s ease-out;
     cursor: pointer;
@@ -210,4 +252,19 @@
         bottom:12px;
         transition: all 0.5s;
     }
+}
+
+
+/* bg-size=110% */
+
+.item04:hover, 
+.item05:hover{
+    background-size: 120%;
+}
+
+/* bg-size=120% */
+
+.item14:hover, 
+.item15:hover{
+    background-size: 130%;
 }
