@@ -241,7 +241,6 @@
 }
 
 /* bg-size=100% */
-
 .gallery-item:hover{
     --percentage:-10%;
     background-size: 110%;
@@ -254,16 +253,13 @@
     }
 }
 
-
 /* bg-size=110% */
-
 .item04:hover, 
 .item05:hover{
     background-size: 120%;
 }
 
 /* bg-size=120% */
-
 .item14:hover, 
 .item15:hover{
     background-size: 130%;
