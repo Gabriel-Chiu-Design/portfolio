@@ -649,58 +649,96 @@
     flex-direction: column;
     width: 100%;
     gap: 80px;
-    overflow: hidden;
     margin: 100px 0 100px;
+
+    position: relative;
+    }
+
+.testimonial-section .comment-bg{
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    bottom:0;
+    z-index: -2;
 }
 
-.testimonial-section .swiper{
-    width: 80%;
-    overflow: visible;
+.testimonial-section .scroll-container{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    background: linear-gradient(90deg, rgba(38, 38, 38, 100%) 0%, rgba(38, 38, 38, 0.00) 10%), 
+    linear-gradient(-90deg, rgba(38, 38, 38, 100%) 0%, rgba(38, 38, 38, 0.00) 10%);
 }
 
-.testimonial-section .swiper-slide{
-    padding: 0 80px 48px;
-    height: auto;
+.testimonial-section .comment-container{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    z-index: -1;
 }
 
-.testimonial-section .swiper-slide-next,
-.testimonial-section .swiper-slide-prev{
-    opacity: 0.2;
+.scroll-1{
+    animation: scroll-1 30s infinite linear;
 }
 
-.testimonial-section .swiper-button-prev,
-.testimonial-section .swiper-button-next{
-    width: 40px;
-    height: 12px;
-    color: transparent;
+@keyframes scroll-1 {
+    from {
+        transform: translateX(-25%);
+    }
+    to {
+    transform: translateX(-100%);
+    }
 }
 
-.testimonial-section .swiper-button-prev:hover,
-.testimonial-section .swiper-button-next:hover{
-    width: 54px;
-    height: 12px;
-    transition: all 300ms ease;
+.scroll-1:hover{
+    animation-play-state: paused;
 }
 
-.testimonial-section .swiper-button-prev{
-    background: center / contain no-repeat url(../element/icon/arrow-left.svg);
+.scroll-2{
+    display: flex;
+    gap: 48px;
+    animation: scroll-2 30s infinite linear;
 }
 
-.testimonial-section .swiper-button-next{
-    background: center / contain no-repeat url(../element/icon/arrow-right.svg);
+@keyframes scroll-2{
+    from {
+        transform: translateX(-75%);
+      }
+    to {
+    transform: translateX(0%);
+    }
 }
 
-.testimonial-section .swiper-pagination-bullet{
-    background: var(--main);
+.scroll-2:hover{
+    animation-play-state: paused;
 }
 
 .testimonial-section .comment-box{
     display: flex;
     flex-direction: column;
-    padding: 48px;
+    padding: 24px 24px 20px 24px;
     gap: 24px;
-    background-color: var(--black-70);
+    border-radius: 16px;
+    border: 1.5px solid #303030;
+    background: linear-gradient(111deg, rgba(48, 48, 48, 0.50) 29.08%, rgba(40, 40, 40, 0.50) 83.29%);
+    backdrop-filter: blur(8px);
     height: 100%;
+    min-width: 480px;
+}
+
+.testimonial-section .comment-box:hover{
+    padding: 32px;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #303030;
+    transition: all 500ms ease;
+    transform: rotate(-1deg);
+
+    .comment h2{
+        font-size: 24px;
+    }
+    .comment p{
+        font-size: 16px;
+    }
 }
 
 .comment-box .client{
@@ -710,8 +748,8 @@
 }
 
 .comment-box .client .profile{
-    width: 48px;
-    height: 48px;
+    width: 36px;
+    height: 36px;
     border-radius: 100%;  
     object-fit: contain;
 }
@@ -725,7 +763,7 @@
 .comment-box .client .name{
     align-self: stretch;
     color: var(--white-90);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     margin-bottom: 4px;
 }
@@ -733,30 +771,30 @@
 .comment-box .client .project-type{
     align-self: stretch;
     color: var(--white-50);
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 300;
 }
 
 .comment-box .comment{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
     flex: 1 0 0; 
 }
 
 .comment-box .comment h2{
     align-self: stretch;
     color: var(--white-90, #E6E6E6);
-    font-size: 24px;
-    line-height: 110%; /* 44px */
+    font-size: 20px;
+    line-height: 125%; /* 44px */
 }
 
 .comment-box .comment p{
     align-self: stretch;
     color: var(--white-75, #BFBFBF);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 150%; /* 30px */
+    line-height: 140%; /* 30px */
     letter-spacing: 0.2px;
 }
 
@@ -764,52 +802,16 @@
     .testimonial-section{
         margin: 80px 0 80px;
     }
-    .testimonial-section .swiper{
-        width: 85%;
-        overflow: visible;
-    }
-    .testimonial-section .swiper-slide{
-        padding: 0 64px 48px;
-    }
 }
 
 @media (max-width:1024px) {
     .testimonial-section{
         margin: 64px 0 64px;
     }
-    .testimonial-section .swiper{
-        width: 85%;
-        overflow: visible;
-    }
-    .testimonial-section .swiper-slide{
-        padding: 0 36px 36px;
-    }
     .testimonial-section .comment-box{
         padding: 40px;
         gap: 40px;
-    }
-    .comment-box .comment h2{
-        font-size: 28px;
-    }
-    .comment-box .comment p{
-        font-size: 18px;
-    }
-    .comment-box .client .profile{
-        width: 120px;
-        height: 120px;
-        margin-bottom: 20px;
-    }
-    .comment-box .client .name{
-        font-size: 18px;
-        margin-bottom: 4px;
-    }
-    .comment-box .client .project-type{
-        font-size: 16px;
-    }
-    .testimonial-section .swiper-button-prev,
-    .testimonial-section .swiper-button-next{
-        display: none; 
-    }   
+    }  
 }
 
 @media (max-width:768px) {
@@ -817,51 +819,10 @@
         gap: 48px;
         margin: 48px 0 48px;
     }
-    .testimonial-section .swiper{
-        width: 90%;
-        overflow: visible;
-    }
-    .testimonial-section .swiper-slide{
-        padding: 0 12px 36px;
-    }
-    .comment-box .comment h2{
-        font-size: 24px;
-    }
-    .comment-box .comment p{
-        font-size: 16px;
-    }
     .testimonial-section .comment-box{
         padding: 24px;
         gap: 24px;
         flex-direction: column;
-    }
-    .comment-box .client{
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 12px;
-    }
-    .comment-box .client .profile{
-        width: 36px;
-        height: 36px;
-        border-radius: 44px;
-        margin-bottom: 0px;
-        padding: 0;
-    }
-
-    .comment-box .client .details{
-        display: flex;
-        flex-direction: column;
-    }
-    .comment-box .client .name{
-        text-align: left;
-        font-size: 16px;
-        margin-bottom: 4px;
-    }
-    .comment-box .client .project-type{
-        text-align: left;
-        font-size: 14px;
     }
 }
 
