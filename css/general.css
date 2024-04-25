@@ -129,7 +129,6 @@ body{
 
 .header{
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	width: 100%;
 	background: linear-gradient(180deg, #262626 0%, rgba(38, 38, 38, 0.00) 100%);
