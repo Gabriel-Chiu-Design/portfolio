@@ -24,10 +24,16 @@
                 <ul class="nav">
                     <li><a class="active" href="index.html">/首頁</a></li>
                     <li><a href="html/graphic.html">/平面設計</a></li>
-                    <li><a href="html/web-dev.html">/網頁開發</a></li>
+                    <li><a href="html/web-dev.html">/網站開發</a></li>
                     <li class="lang">
-                        <a id="lang-option" href="index.html">Eng</a>
-                        <a id="lang-option" class="active" href="chi-index.html">中</a>
+                        <a id="lang-option" class="active">
+                            <img src="element/icon/lang.svg" alt="language-icon" class="lang-icon">
+                            <p>中文</p>
+                            <img src="element/icon/lang-dropdown.svg" alt="dropdown-icon" class="dropdown-icon">
+                        </a>
+                        <a id="lang-option" class="inactive" href="index.html">
+                            Eng
+                        </a>
                     </li>
                 </ul>
                 <div class="side-menu-icon"></div>
@@ -41,121 +47,223 @@
         </div>
         <div class="stone-section">
                 <div class="section-title-box">
-                    <h1 class="title">The design I do</h1>
-                    <div class="caption">stones, unique from each other</div>
+                    <h1 class="title">我們的設計</h1>
+                    <div class="caption">像原石一樣，獨一無二</div>
                 </div>
                 <div class="stone-svg"></div>
                 <div class="style empathetic">
-                    <h2>Empathetic</h2>
-                    <p>Good designs are empathetic to the needs of audience.</p>
+                    <h2>同情心</h2>
+                    <p>我們相信好的設計需要理解和同情觀眾的真實需求</p>
                 </div>
                 <div class="style inspiring">
-                    <h2>Inspiring</h2>
-                    <p>Always looking for something special and meaningful, discovering the true beauty of a concept
-                        with great visual realization.</p>
+                    <h2>啓發性</h2>
+                    <p>我們總是尋求概念之中的魅力，以動人的視覺方式呈現出來</p>
                 </div>
                 <div class="style meaningful">
-                    <h2>Meaningful</h2>
-                    <p>Our mission is to create a brand or a motivating purpose within the design.</p>
+                    <h2>意義</h2>
+                    <p>我們希望可以透過設計傳達品牌的理念和激勵人心的訊息</p>
                 </div>
         </div>
         <div class="selected-projects">
             <div class="section-title-box">
-                <h1 class="title">Selected Projects</h1>
-                <div class="caption">some adventures we've been through</div>
+                <h1 class="title">精選個案</h1>
+                <div class="caption">那些我們一起經過的旅程</div>
             </div>
             <div class="project-list">
                 <a class="project prj-1" href="html/zen.html">
                     <h3>ZEN</h3>
-                    <p>Customized Wordpress Website</p>
-                    <div class="tag">view details</div>
+                    <p>客製化Wordpress網站</p>
+                    <div class="tag">查看細節</div>
                 </a>
                 <a class="project prj-2" href="html/caiyi.html">
-                    <h3>Caiyi Clinic</h3>
-                    <p>Cosmetics Clinic Website</p>
-                    <div class="tag">view details</div>
+                    <h3>采依醫學美容</h3>
+                    <p>美容業形象網站</p>
+                    <div class="tag">查看細節</div>
                 </a>
                 <a class="project prj-3" href="html/churchplus.html">
-                    <h3>Church+ App</h3>
-                    <p>Social Media App Re-design</p>
-                    <div class="tag">view details</div>
+                    <h3>教會通</h3>
+                    <p>社群平台介面設計</p>
+                    <div class="tag">查看細節</div>
                 </a>
                 <a class="project prj-4" href="html/uneo.html">
-                    <h3>UNEO App</h3>
-                    <p>Medical App UI Design</p>
-                    <div class="tag">view details</div>
+                    <h3>UNEO應用程式</h3>
+                    <p>醫療應用介面設計</p>
+                    <div class="tag">查看細節</div>
                 </a>
             </div>
         </div>
         <div class="testimonial-section">
-                <div class="section-title-box">
-                    <h1 class="title">Testimonial</h1>
-                    <div class="caption">that’s what they said</div>
-                </div>
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="comment-box">
-                            <div class="client">
-                                <img class="profile" src="element/picutre/caiyi-logo.jpeg">
-                                <div class="details">
-                                    <p class="name">Mr. Liu</p>
-                                    <p class="project-type">UIUX Design</p>
-                                </div>
-                            </div>
-                            <div class="comment">
-                                <h2>Consider and provide advices more than I thought!</h2>
-                                <p>It is very helpful that Gabriel let me understand the circumstances I was facing and providing me more options, ideas and suggestions to make my website works!</p>
+            <div class="section-title-box">
+                <h1 class="title">客戶回饋</h1>
+                <div class="caption">屬於我們的美好經歷</div>
+            </div>
+            <div class="scroll-container">
+                <div class="comment-container scroll-1">
+                    <div class="comment-box">
+                        <div class="comment">
+                            <h2>考慮周到，為我們提供更多的選項</h2>
+                            <p> Gabriel是一個非常貼心的設計師，他為我們提供比原本計畫中更具體、更全面的設計方案，讓我們的網站更能達到心中的目標。</p>
+                        </div>
+                        <div class="client">
+                            <img class="profile" src="element/picutre/caiyi-logo.jpeg">
+                            <div class="details">
+                                <p class="name">劉先生</p>
+                                <p class="project-type">采依醫學美容診所</p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="comment-box">
+                    <div class="comment-box">
+                        <div class="comment">
+                            <h2>用心的溝通和熱情投入</h2>
+                            <p>這是不一樣的體驗，Gabriel有一套他的工作流程，照顧到很多我們不為所知的細節，幫助我們在專案前期調整好方向，省掉很多後面來回溝通和修改的時間！</p>
+                        </div>
                             <div class="client">
                                 <img class="profile" src="element/picutre/havppen-logo.png">
                                 <div class="details">
                                     <p class="name">Havppen</p>
-                                    <p class="project-type">UIUX Design</p>
+                                    <p class="project-type">Saas線上課程平台</p>
                                 </div>
                             </div>
-                            <div class="comment">
-                                <h2>Execellent communication and extra effort</h2>
-                                <p>It was different. Gabriel worked it out with a well-paced and detailed process in which we could discuss and refind our original plan. It saved us tones of time because we could receive feedbacks before the design drafts.</p>
+                    </div>
+                    <div class="comment-box">
+                        <div class="comment">
+                            <h2>熱心和到位的設計建議</h2>
+                            <p>我挺喜歡這個年輕人，他會跟我來會討論一些專案的議題，提出一些有建設性的反問和建議，這是難得一見的工作態度，讚！</p>
+                        </div>
+                        <div class="client">
+                            <img class="profile" src="element/picutre/zen-logo.svg">
+                            <div class="details">
+                                <p class="name">Christopher</p>
+                                <p class="project-type">ZEN總監</p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="comment-box">
+                    <div class="comment-box">
+                        <div class="comment">
+                            <h2>考慮周到，為我們提供更多的選項</h2>
+                            <p> Gabriel是一個非常貼心的設計師，他為我們提供比原本計畫中更具體、更全面的設計方案，讓我們的網站更能達到心中的目標。</p>
+                        </div>
+                        <div class="client">
+                            <img class="profile" src="element/picutre/caiyi-logo.jpeg">
+                            <div class="details">
+                                <p class="name">劉先生</p>
+                                <p class="project-type">采依醫學美容診所</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-box">
+                        <div class="comment">
+                            <h2>用心的溝通和熱情投入</h2>
+                            <p>這是不一樣的體驗，Gabriel有一套他的工作流程，照顧到很多我們不為所知的細節，幫助我們在專案前期調整好方向，省掉很多後面來回溝通和修改的時間！</p>
+                        </div>
                             <div class="client">
-                                <img class="profile" src="element/picutre/zen-logo.svg">
+                                <img class="profile" src="element/picutre/havppen-logo.png">
                                 <div class="details">
-                                    <p class="name">Christopher</p>
-                                    <p class="project-type">ZEN Director</p>
+                                    <p class="name">Havppen</p>
+                                    <p class="project-type">Saas線上課程平台</p>
                                 </div>
                             </div>
-                            <div class="comment">
-                                <h2>Passionate and great design advices</h2>
-                                <p>I love this young man. He counters me with constructive ideas and perspectives, it is not usual among designers and most of my cooperation with the younger generation. Great energy and good work!</p>
+                    </div>
+                    <div class="comment-box">
+                        <div class="comment">
+                            <h2>熱心和到位的設計建議</h2>
+                            <p>我挺喜歡這個年輕人，他會跟我來會討論一些專案的議題，提出一些有建設性的反問和建議，這是難得一見的工作態度，讚！</p>
+                        </div>
+                        <div class="client">
+                            <img class="profile" src="element/picutre/zen-logo.svg">
+                            <div class="details">
+                                <p class="name">Christopher</p>
+                                <p class="project-type">ZEN總監</p>
                             </div>
                         </div>
                     </div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
                 </div>
+                <div class="comment-container scroll-2">
+                    <div class="comment-box">
+                        <div class="comment">
+                            <h2>考慮周到，為我們提供更多的選項</h2>
+                            <p> Gabriel是一個非常貼心的設計師，他為我們提供比原本計畫中更具體、更全面的設計方案，讓我們的網站更能達到心中的目標。</p>
+                        </div>
+                        <div class="client">
+                            <img class="profile" src="element/picutre/caiyi-logo.jpeg">
+                            <div class="details">
+                                <p class="name">劉先生</p>
+                                <p class="project-type">采依醫學美容診所</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-box">
+                        <div class="comment">
+                            <h2>用心的溝通和熱情投入</h2>
+                            <p>這是不一樣的體驗，Gabriel有一套他的工作流程，照顧到很多我們不為所知的細節，幫助我們在專案前期調整好方向，省掉很多後面來回溝通和修改的時間！</p>
+                        </div>
+                            <div class="client">
+                                <img class="profile" src="element/picutre/havppen-logo.png">
+                                <div class="details">
+                                    <p class="name">Havppen</p>
+                                    <p class="project-type">Saas線上課程平台</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="comment-box">
+                        <div class="comment">
+                            <h2>熱心和到位的設計建議</h2>
+                            <p>我挺喜歡這個年輕人，他會跟我來會討論一些專案的議題，提出一些有建設性的反問和建議，這是難得一見的工作態度，讚！</p>
+                        </div>
+                        <div class="client">
+                            <img class="profile" src="element/picutre/zen-logo.svg">
+                            <div class="details">
+                                <p class="name">Christopher</p>
+                                <p class="project-type">ZEN總監</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-box">
+                        <div class="comment">
+                            <h2>考慮周到，為我們提供更多的選項</h2>
+                            <p> Gabriel是一個非常貼心的設計師，他為我們提供比原本計畫中更具體、更全面的設計方案，讓我們的網站更能達到心中的目標。</p>
+                        </div>
+                        <div class="client">
+                            <img class="profile" src="element/picutre/caiyi-logo.jpeg">
+                            <div class="details">
+                                <p class="name">劉先生</p>
+                                <p class="project-type">采依醫學美容診所</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-box">
+                        <div class="comment">
+                            <h2>用心的溝通和熱情投入</h2>
+                            <p>這是不一樣的體驗，Gabriel有一套他的工作流程，照顧到很多我們不為所知的細節，幫助我們在專案前期調整好方向，省掉很多後面來回溝通和修改的時間！</p>
+                        </div>
+                            <div class="client">
+                                <img class="profile" src="element/picutre/havppen-logo.png">
+                                <div class="details">
+                                    <p class="name">Havppen</p>
+                                    <p class="project-type">Saas線上課程平台</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="comment-box">
+                        <div class="comment">
+                            <h2>熱心和到位的設計建議</h2>
+                            <p>我挺喜歡這個年輕人，他會跟我來會討論一些專案的議題，提出一些有建設性的反問和建議，這是難得一見的工作態度，讚！</p>
+                        </div>
+                        <div class="client">
+                            <img class="profile" src="element/picutre/zen-logo.svg">
+                            <div class="details">
+                                <p class="name">Christopher</p>
+                                <p class="project-type">ZEN總監</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="workflow-section">
                 <div class="section-title-box">
-                    <h1 class="title">Workflow</h1>
-                    <div class="caption">our journey</div>
+                    <h1 class="title">專屬的開發流程</h1>
+                    <div class="caption">這是我們的旅程</div>
                 </div>
                 <div class="flow-list">
                     <div class="flow">
@@ -164,7 +272,7 @@
                         </div>
                         <div class="flow-description">
                             <div class="flow-brief">
-                                <h2>Discovery</h2>
+                                <h2>探索階段</h2>
                                 <p>We start the journey by opening a map, search for the locations with hidden treasures and
                                     stunning attractions. We seek agreements and directions at this stage</p>
                             </div>
@@ -181,7 +289,7 @@
                         </div>
                         <div class="flow-description">
                             <div class="flow-brief">
-                                <h2>Concept Development</h2>
+                                <h2>概念發想與設定</h2>
                                 <p>We continue our adventure plan with more solid ideas, such as tone, graphic style, design concepts, functionality and  design messages.</p>
                             </div>
                             <ul class="flow-details">
@@ -199,7 +307,7 @@
                         </div>
                         <div class="flow-description">
                             <div class="flow-brief">
-                                <h2>Design & Refine</h2>
+                                <h2>美術設計與修改</h2>
                                 <p>With confirmed design directions and guides, we jump into the design and adventure! A pretty and balance design draft shall be the final deliverable.</p>
                             </div>
                             <ul class="flow-details">
@@ -215,7 +323,7 @@
                         </div>
                         <div class="flow-description">
                             <div class="flow-brief">
-                                <h2>Development</h2>
+                                <h2>開發與製作</h2>
                                 <p>With the final design draft on hand, we start making it real on the internet.</p>
                             </div>
                             <ul class="flow-details">
@@ -231,7 +339,7 @@
                         </div>
                         <div class="flow-description">
                             <div class="flow-brief">
-                                <h2>Test & Finailize</h2>
+                                <h2>測試與上架</h2>
                                 <p>We would go through everything again and see if there are any bugs across devices and operating system. Adjust if there are any, or time to celebrate!</p>
                             </div>
                             <ul class="flow-details">
@@ -255,15 +363,15 @@
         <div class="overlay"></div>
         <ul class="side-menu">
             <a href="index.html" style="border-top: 1.5px solid var(--black-70, #4E4E4E);">
-                <p>Home</p>
+                <p>首頁</p>
                 <div class="arrow"></div>
             </a>
             <a href="html/web-dev.html">
-                <p>Web Development</p>
+                <p>網站開發</p>
                 <div class="arrow"></div>
             </a>
             <a href="html/graphic.html">
-                <p>Graphic Design</p>
+                <p>平面設計</p>
                 <div class="arrow"></div>
             </a>
         </ul>

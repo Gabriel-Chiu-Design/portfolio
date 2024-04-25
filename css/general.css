@@ -199,18 +199,59 @@ body{
 
 .header .lang{
 	display: flex;
+	flex-direction: column;
 	gap: 8px;
 	align-items: center;
-	color: var(--white-50);
-	font-size: 14px;
-	padding: 8px 12px;
-	background-color: var(--black-80);
+	position: relative;
 }
 
 .header #lang-option{
+	display: flex;
+	gap: 4px;
+	align-items: center;
 	padding-bottom: 0;
 	border: none;
+
+	font-size: 14px;
+	color: var(--white-50);
 }
+
+.header .lang img{
+	width: 20px;
+	height: 20px;
+}
+
+.header .inactive{
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	height: 0;
+
+	transition: all 300ms ease;
+}
+
+.header #lang-option:hover{
+	color: var(--white-75);
+	cursor: pointer;
+
+	.lang-icon{
+		content: url(../element/icon/lang-hover.svg);
+	}
+
+	.dropdown-icon{
+		content: url(../element/icon/lang-dropdown-hover.svg);
+	}
+}
+
+.header .inactive.open{
+		top:32px;
+		height: fit-content;
+		opacity: 1;
+		transition: all 300ms ease;
+}
+
+
+
 
 
 /* -------- side-menu -------- */

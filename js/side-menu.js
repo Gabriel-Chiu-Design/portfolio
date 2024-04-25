@@ -10,4 +10,9 @@ $(document).ready(function () {
         $(".side-menu").removeClass("active");
         $(".overlay").removeClass("active");
     });
+
+    $(".active").click(function (e) { 
+        e.preventDefault();
+        $(".inactive").toggleClass("open");
+    });
 });
