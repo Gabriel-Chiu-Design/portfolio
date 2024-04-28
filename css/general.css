@@ -130,6 +130,7 @@ body{
 .header{
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	width: 100%;
 	background: linear-gradient(180deg, #262626 0%, rgba(38, 38, 38, 0.00) 100%);
 	position: sticky;
