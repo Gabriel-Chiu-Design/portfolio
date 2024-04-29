@@ -72,7 +72,7 @@ body{
     }
 }
 
-/*------Case Study CSS------*/
+/*------ Case Study CSS ------*/
 
 .project-showcase{
     display: flex;
@@ -271,6 +271,10 @@ body{
     font-style: normal;
     font-weight: 300;
     line-height: 140%; /* 22.4px */
+}
+
+.case-details video{
+    width: 100%;
 }
 
 @media (max-width:1440px) {
