@@ -223,9 +223,10 @@ body{
 
 .header .inactive{
 	position: absolute;
-	top: 0;
+	top: 8px;
 	opacity: 0;
 	height: 0;
+	z-index: -1;
 
 	transition: all 300ms ease;
 }
@@ -246,6 +247,7 @@ body{
 .header .inactive.open{
 		top:32px;
 		height: fit-content;
+		z-index: auto;
 		opacity: 1;
 		transition: all 300ms ease;
 }
