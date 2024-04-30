@@ -11,7 +11,7 @@ $(document).ready(function () {
         $(".overlay").removeClass("active");
     });
 
-    $(".active").click(function (e) { 
+    $(".lang .active").click(function (e) { 
         e.preventDefault();
         $(".inactive").toggleClass("open");
     });
