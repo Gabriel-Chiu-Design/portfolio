@@ -351,6 +351,9 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
     }
+    .case-brief .back{
+        display: none;
+    }
     .case-brief h2{
         font-size: 32px;
     }
