@@ -6,7 +6,7 @@
 .graphic-section{
     display: flex;
     flex-direction: column;
-    max-width: 1024px;
+    max-width: 1200px;
     margin: 48px 0 72px;
     width: 100%;
     gap: 48px;
@@ -85,7 +85,6 @@
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    max-width: 1024px;
     margin: 0px 0 72px;
     width: 100%;
     gap: 1%;
@@ -93,7 +92,7 @@
 
 .gallery-item{
     display: none;
-    height: 280px;
+    height: 320px;
     width: 32.65%;
     margin-bottom: 24px;
     padding: 24px;
@@ -263,4 +262,38 @@
 .item14:hover, 
 .item15:hover{
     background-size: 130%;
+}
+
+@media (max-width:1440px) {
+    .graphic-section{
+        margin: 48px 0 72px;
+        gap: 48px;
+    }
+    .graphic-section .gallery-box{
+        gap: 48px;
+        padding: 0 48px;
+    }
+    .gallery{
+        margin: 0px 0 72px;
+    }
+    .gallery-item{
+        height: 280px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width:1024px) {
+    .gallery-item{
+        height: 280px;
+        width: 48%;
+        margin-bottom: 24px;
+        padding: 24px;
+        gap: 4px;
+    }
+    
+    .gallery-item.banner,
+    .gallery-item.PPT{
+        width: 100%;
+        order: 1;
+    }
 }
