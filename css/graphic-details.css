@@ -1,11 +1,24 @@
-/*------Case Study CSS------*/
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    max-width: none;
+    position: fixed;
+    transition: all 0.5s;
+}
+
+/*------ Case Study CSS ------*/
 
 .project-showcase{
     display: flex;
     padding: 0 48px;
-    gap: 24px;
+    gap: 96px;
     width: 100%;
-    position: relative;
+    margin-top: 48px;
 }
 
 .case-brief{
@@ -15,25 +28,44 @@
     gap: 16px;
     flex-direction: column;
     flex:1 0 0;
-    margin-top: 120px;
 
     position: sticky;
-    top: 120px;
+    top: 106px;
 }
 
-.case-brief .subtitle{
-    margin-bottom: 8px;
-
+.case-brief h2{
     color: var(--white-90, #E6E6E6);
-    font-size: 28px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
+.case-brief h4{
+    color: var(--white-75, #BFBFBF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.subtitle{
+    margin-bottom: 8px;
+    padding: 16px 0 4px;
+    border-bottom: 1.5px solid var(--white-90, #E6E6E6);
+
+    color: var(--white-90, #E6E6E6);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    background: var(--black-85);
+}
+
 .case-details .subtitle{
     position: sticky;
-    top: 0px;
+    top: 106px;
 }
 
 .case-brief .box{
@@ -44,16 +76,21 @@
     top: 0;
 }
 
+.case-brief .title.box{
+    margin-bottom: 16px;
+    gap: 12px;
+}
+
 .case-brief h3{
-    color: var(--white-90, #E6E6E6);
-    font-size: 18px;
+    color: var(--white-50);
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.case-brief p, .case-brief li{
-    color: var(--white-75, #E6E6E6);
+.case-brief p{
+    color: var(--white-90, #E6E6E6);
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -70,36 +107,12 @@
     letter-spacing: 0.32px;
 }
 
-.case-brief .contact{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 4px 16px 4px 0;
-    gap: 8px;
-    border-radius: 8px;
-    margin-top: 24px;
 
-    color: var(--black-85);
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 125%;
-    background-color: var(--white-90);
-}
-
-.case-brief .contact:hover{
-    color: var(--white-90);
-    background-color: var(--main);
-    
-    img{
-        content: url(../element/icon/contact-hover.svg);
-    }
-}
-
-.case-brief .back{
+.case-brief .btn{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 16px 4px 0;
+    padding: 8px 8px 8px 16px;
     gap: 8px;
     border-radius: 8px;
     margin-top: 12px;
@@ -111,12 +124,17 @@
     background-color: var(--black-80);
 }
 
-.case-brief .back:hover{
+.case-brief a span{
+    flex: 1 0 0;
+}
+
+
+.case-brief .btn:hover{
     color: var(--white-75);
     background-color: var(--black-70);
     
     img{
-        content: url(../element/icon/subdirectory-arrow-left-hover.svg);
+        content: url(../element/icon/chevron-right-hover.svg);
     }
 }
 
@@ -127,13 +145,13 @@
     object-fit: cover;
 }
 
-
 .case-details{
     display: flex;
     flex-direction: column;
     gap: 24px;
     align-self: stretch;
-    flex:1 0 0;
+    flex: 1 0 0;
+    padding-top: 80px;
 }
 
 .case-details .box{
@@ -143,18 +161,11 @@
     margin-bottom: 24px;
 }
 
-.case-details .subtitle{
-    margin-bottom: 8px;
-    padding: 120px 0 4px;
-    border-bottom: 1.5px solid var(--white-90, #E6E6E6);
-
-    color: var(--white-90, #E6E6E6);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-    background: var(--black-85);
+.case-details .text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
 }
 
 .case-details img{
@@ -165,7 +176,7 @@
 
 .case-details h3{
     color: var(--white-90);
-    font-family: 'Sk-Modernist Mono';
+
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -180,7 +191,12 @@
     line-height: normal;
 }
 
-.case-details p{
+.case-details ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.case-details p, .case-details li{
     color: var(--white-75);
     font-size: 18px;
     font-style: normal;
@@ -194,4 +210,130 @@
     font-style: normal;
     font-weight: 300;
     line-height: 140%; /* 22.4px */
+}
+
+.case-details video{
+    width: 100%;
+}
+
+@media (max-width:1440px) {
+    .project-showcase{
+        padding: 0 48px;
+        gap: 36px;
+        margin-top: 24px;
+    }
+    .case-brief{
+        gap: 16px;
+        flex:1 0 0;
+        top: 106px;
+        max-width: 280px;
+    }
+    .case-brief h2{
+        font-size: 32px;
+    }
+    .case-brief h4{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1024px) {
+    .project-showcase{
+        flex-direction: column;
+        padding: 0 24px;
+        gap: 48px;
+        margin-top: 120px;
+    }
+    .case-brief{
+        max-width: none;
+        width: 100%;
+        gap: 1%;
+        flex:1 0 0;
+        top: 106px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .case-brief h2{
+        font-size: 32px;
+    }
+    .case-brief h4{
+        font-size: 16px;
+    }
+    .case-brief .box.title{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .case-brief .box.details{
+        flex: 1 0 0;
+        margin-bottom: 12px;
+    }
+    .case-brief .box.links{
+        flex-direction: row;
+        width: 100%;
+        gap: 12px;
+    }
+    .case-brief .box.links a{
+        flex: 1 0 0;
+    }
+    .case-details{
+        padding-top: 0px;
+    }
+}
+
+@media (max-width:768px) {
+    .project-showcase{
+        gap: 24px;
+        margin-top: 24px;
+    }
+    .case-brief h2{
+        font-size: 32px;
+    }
+    .case-brief h4{
+        font-size: 16px;
+    }
+    .case-brief .box.title{
+        width: 100%;
+    }
+    .case-brief .box.details{
+        width: 49%;
+        margin-bottom: 12px;
+        flex: none;
+    }
+    .case-brief .box.links{
+        flex-direction: column;
+        width: 100%;
+        gap: 0px;
+    }
+}
+
+@media (max-width:440px) {
+    .project-showcase{
+        padding: 0 16px;
+        margin-top: 16px;
+    }
+    .case-brief h2{
+        font-size: 28px;
+    }
+    .case-brief .box.details{
+        width: 100%;
+    }
+}
+
+/*------ Other Fixed Elements ------*/
+
+.backtotop{
+    display: none;
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 48px;
+    height: 48px;
+
+    img{
+        object-fit: cover;
+    }
+}
+
+.backtotop:hover{
+    cursor: pointer;
+    content: url(../element/icon/back-to-top-hover.svg)
 }

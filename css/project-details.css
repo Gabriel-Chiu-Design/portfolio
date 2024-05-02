@@ -48,6 +48,13 @@ body{
     url(../element/projects/uneo/project-cover.png);
 }
 
+.cover.mollifix{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.00) 36.12%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 66.35%, rgba(0, 0, 0, 0.75) 100%), top center / cover no-repeat 
+    /*change the url here*/
+    url(../element/projects/mollifix/cover.png);
+
+}
+
 @media (max-width:1440px) {
     .cover{
         height: 480px;
@@ -84,8 +91,8 @@ body{
 
 .case-brief{
     display: flex;
-    width: 100%;
     max-width: 360px;
+    width: 100%;
     gap: 16px;
     flex-direction: column;
     flex:1 0 0;
