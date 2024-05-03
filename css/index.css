@@ -150,9 +150,16 @@
     }
 }
 @media (max-width:768px) {
+    .footer{
+        bottom:16px;
+    }
     .footer .link{
         display: flex;
         gap: 12px;
+    }
+    .footer .btn {
+        width: 90px;
+        height: 40px;
     }
 }
 
