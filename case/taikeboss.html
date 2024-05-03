@@ -13,14 +13,24 @@
 <body>
     <div class="header">
         <div class="header-container">
-            <a href="../index.html" class="logo-section">
+            <a href="index.html" class="logo-section">
                 <div class="logo"></div>
                 <p>SH Design Studio</p>
             </a>
             <ul class="nav">
                 <li><a href="../index.html">/Home</a></li>
-                <li><a class="active" href="graphic.html">/Graphic Design</a></li>
+                <li><a href="graphic.html" class="active">/Graphic Design</a></li>
                 <li><a href="web-dev.html">/Web Development</a></li>
+                <li class="lang">
+                    <a id="lang-option" class="active">
+                        <img src="../element/icon/lang.svg" alt="language-icon" class="lang-icon">
+                        <p>Eng</p>
+                        <img src="../element/icon/lang-dropdown.svg" alt="dropdown-icon" class="dropdown-icon">
+                    </a>
+                    <a id="lang-option" class="inactive" href="chi-index.html">
+                        繁體中文
+                    </a>
+                </li>
             </ul>
             <div class="side-menu-icon"></div>
         </div>
@@ -81,12 +91,27 @@
             </div>
         </div>
     </div>
+    <div class="overlay"></div>
+    <ul class="side-menu">
+        <a href="index.html" style="border-top: 1.5px solid var(--black-70, #4E4E4E);">
+            <p>Home</p>
+            <div class="arrow"></div>
+        </a>
+        <a href="html/web-dev.html">
+            <p>Web Development</p>
+            <div class="arrow"></div>
+        </a>
+        <a href="html/graphic.html">
+            <p>Graphic Design</p>
+            <div class="arrow"></div>
+        </a>
+    </ul>
 
 <!-- Javascript Links -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
   <script src="../js/project-details.js"></script>
-
+  <script src="js/side-menu.js"></script>
 </body>
 </html>
