@@ -254,7 +254,9 @@
 
 /* bg-size=110% */
 .item04:hover, 
-.item05:hover{
+.item05:hover,
+.item12:hover,
+.item13:hover{
     background-size: 120%;
 }
 
