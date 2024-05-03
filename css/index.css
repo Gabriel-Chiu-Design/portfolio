@@ -1,7 +1,15 @@
+.wrap{
+    overflow-x: hidden;
+}
+
+.header{
+    position: fixed;
+}
+
 /* -------- hero-section -------- */
 
 .hero-section{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -9,6 +17,7 @@
     height: 90vh;
     width: 100%;
     gap: 72px;
+    padding-top: 144px;
     position: relative;
     background: center center / cover no-repeat url(../element/icon/logo.png);
 }
@@ -47,7 +56,10 @@
 @media (max-width:1440px) {
     .hero-section{
         height: fit-content;
-        padding: 72px 0 72px;
+        padding: 144px 0 72px;
+    }
+    .hero-section .animation{
+        height: 400px;
     }
 }
 
@@ -57,7 +69,7 @@
         background-size: 120%;
     }
     .hero-section .animation{
-        height: 400px;
+        height: 360px;
     }
     .hero-section .intro{
         font-size: 18px;
@@ -72,9 +84,10 @@
     .hero-section{
         gap: 24px;
         background-size: 150%;
+        padding: 120px 0 48px;
     }
     .hero-section .animation{
-        width: 100%;
+        width: 80%;
         height: fit-content;
     }
     .hero-section .intro{
@@ -83,6 +96,12 @@
     }
     .logo-bg{
         width: 200%;
+    }
+}
+@media (max-width:580px) {
+    .hero-section .animation{
+        width: 100%;
+        height: fit-content;
     }
 }
 
@@ -178,7 +197,6 @@
     width: 100%;
     gap: 120px;
     margin: 100px 0 100px;
-    overflow: hidden;
 }
 
 .stone-section .stone-svg{
@@ -428,7 +446,7 @@
     }
 }
 
-@media (max-width:414px) {
+@media (max-width:440px) {
     .stone-section{
         gap: 48px;
         margin: 36px 0 120px;
@@ -458,7 +476,7 @@
     }
 }
 
-@media (max-width:360px) {
+@media (max-width:380px) {
     .stone-section .stone-svg{
         height: 360px;
         width: 300px;

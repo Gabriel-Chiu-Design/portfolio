@@ -155,11 +155,18 @@
         padding: 16px 24px;
     }
     .selected-projects .project-list .project h2{
-        font-size: 32px;
+        font-size: 24px;
         margin-bottom: 8px;
     }
     .selected-projects .project-list .project p{
         font-size: 16px;
+    }
+    .selected-projects .project-list .project .details{
+        font-size: 14px;
+    }
+    .selected-projects .project-list .project .tag{
+        padding: 6px 12px;
+        font-size: 12px;
     }
 }
 
@@ -178,8 +185,20 @@
         background-size: cover !important;
     }
     .selected-projects .project-list .project h2{
-        font-size: 28px;
+        font-size: 20px;
         margin-bottom: 4px;
+    }
+    .selected-projects .project-list .project p{
+        font-size: 14px;
+    }
+    .selected-projects .project-list .project .details{
+        display: none;
+    }
+    .selected-projects .project-list .project .tag
+    {
+        padding: 5px 10px;
+        right: 8px;
+        font-size: 10px;
     }
 }
 
@@ -190,10 +209,13 @@
     }
     .selected-projects .project-list .project{
         height: 240px;
-        padding: 16px;
+        padding: 12px;
     }
     .selected-projects .project-list .project h2{
-        font-size: 20px;
+        font-size: 16px;
+    }
+    .selected-projects .project-list .project p{
+        font-size: 12px;
     }
 }
 

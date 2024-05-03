@@ -162,7 +162,7 @@ body{
 .header .logo-section .logo{
 	width: 68px;
 	height: 58px;
-	background: center / contain no-repeat url(../element/icon/logo.svg);
+	background: center / contain no-repeat url(../element/icon/logo-sm.png);
 }
 
 .header .nav{
@@ -207,6 +207,8 @@ body{
 
 .header #lang-option{
 	display: flex;
+	width: 100%;
+	justify-content: center;
 	gap: 4px;
 	align-items: center;
 	padding-bottom: 0;
@@ -245,11 +247,11 @@ body{
 }
 
 .header .inactive.open{
-		top:32px;
-		height: fit-content;
-		z-index: auto;
-		opacity: 1;
-		transition: all 300ms ease;
+	top:32px;
+	height: fit-content;
+	z-index: auto;
+	opacity: 1;
+	transition: all 300ms ease;
 }
 
 /* -------- side-menu -------- */

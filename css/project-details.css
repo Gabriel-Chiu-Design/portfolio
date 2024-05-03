@@ -228,7 +228,6 @@ body{
     flex: 1 0 0;
 }
 
-
 .case-brief .btn:hover{
     color: var(--white-75);
     background-color: var(--black-70);
@@ -251,7 +250,6 @@ body{
     gap: 24px;
     align-self: stretch;
     flex: 1 0 0;
-    padding-top: 16px;
 }
 
 .case-details .box{
@@ -319,19 +317,23 @@ body{
 @media (max-width:1440px) {
     .project-showcase{
         padding: 0 48px;
-        gap: 48px;
+        gap: 36px;
         margin-top: 24px;
     }
     .case-brief{
         gap: 16px;
         flex:1 0 0;
         top: 106px;
+        max-width: 280px;
     }
     .case-brief h2{
         font-size: 32px;
     }
     .case-brief h4{
         font-size: 16px;
+    }
+    .case-details h3{
+        font-size: 20px;
     }
 }
 
@@ -357,7 +359,19 @@ body{
     .case-brief h2{
         font-size: 32px;
     }
+    .case-brief h3{
+        font-size: 14px;
+    }
     .case-brief h4{
+        font-size: 16px;
+    }
+    .case-brief a span{
+        font-size: 14px;
+    }
+    .case-details h3{
+        font-size: 18px;
+    }
+    .case-details p{
         font-size: 16px;
     }
     .case-brief .box.title{
@@ -381,12 +395,14 @@ body{
 @media (max-width:768px) {
     .project-showcase{
         gap: 24px;
-        margin-top: 24px;
     }
     .case-brief h2{
         font-size: 32px;
     }
     .case-brief h4{
+        font-size: 16px;
+    }
+    .case-details h3{
         font-size: 16px;
     }
     .case-brief .box.title{
@@ -414,6 +430,9 @@ body{
     }
     .case-brief .box.details{
         width: 100%;
+    }
+    .case-details p{
+        font-size: 14px;
     }
 }
 
