@@ -482,9 +482,6 @@
         width: 300px;
         background-position: top 0px left -110px;
     }
-    .stone-section .style p{
-        font-size: 14px;
-    }
     .stone-section .inspiring{
         width: 200px;
         top: 140px;
@@ -644,13 +641,13 @@
         height: 280px;
         padding: 16px;
         margin-bottom: 2%;
-        gap: 4px;
+        gap: 6px;
     }
     .selected-projects .project-list .project h3{
-        font-size: 18px;
+        font-size: 20px;
     }
     .selected-projects .project-list .project p{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -661,10 +658,11 @@
     }
     .selected-projects .project-list .project{
         height: 200px;
-        padding: 16px;
         margin-bottom: 16px;
         gap: 4px;
-        width: 100%;
+    }
+    .selected-projects .project-list .project p{
+        font-size: 14px;
     }
 }
 

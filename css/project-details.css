@@ -335,6 +335,10 @@ body{
     .case-details h3{
         font-size: 20px;
     }
+    .case-details .box{
+        gap: 12px;
+        margin-bottom: 12px;
+    }
 }
 
 @media (max-width:1024px) {
@@ -353,6 +357,12 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
     }
+    .case-details{
+        gap: 16px;
+    }
+    .case-details .box{
+        margin-bottom: 0px;
+    }
     .case-brief .back{
         display: none;
     }
@@ -366,7 +376,7 @@ body{
         font-size: 16px;
     }
     .case-brief a span{
-        font-size: 14px;
+        font-size: 16px;
     }
     .case-details h3{
         font-size: 18px;
@@ -402,9 +412,6 @@ body{
     .case-brief h4{
         font-size: 16px;
     }
-    .case-details h3{
-        font-size: 16px;
-    }
     .case-brief .box.title{
         width: 100%;
     }
@@ -430,9 +437,6 @@ body{
     }
     .case-brief .box.details{
         width: 100%;
-    }
-    .case-details p{
-        font-size: 14px;
     }
 }
 
