@@ -105,7 +105,8 @@
 }
 
 .gallery-item.banner,
-.gallery-item.PPT{
+.gallery-item.PPT,
+.gallery-item.vi{
     width: 49.5%;
 }
 
