@@ -160,9 +160,9 @@ body{
 }
 
 .header .logo-section .logo{
-	width: 68px;
-	height: 58px;
-	background: center / contain no-repeat url(../element/icon/logo-sm.png);
+	width: 50px;
+	height: 30px;
+	background: center / contain no-repeat url(../element/logo-light.png);
 }
 
 .header .nav{
