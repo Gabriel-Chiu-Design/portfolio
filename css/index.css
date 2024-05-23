@@ -58,14 +58,13 @@
 @media (max-width:1440px) {
     .hero-section{
         height: fit-content;
-        padding: 144px 0 72px;
+        padding: 144px 48px 72px;
     }
 }
 
 @media (max-width:1024px) {
     .hero-section .animation{
         width: 90%;
-        margin: 0px 0px 24px;
     }
     .hero-section .caption{
         font-size: 16px;
@@ -83,7 +82,7 @@
 
 @media (max-width:768px) {
     .hero-section{
-        padding: 120px 0 48px;
+        padding: 120px 24px 48px;
     }
     .hero-section .animation{
         width: 100%;
@@ -103,20 +102,23 @@
     }
 }
 @media (max-width:580px) {
+    .hero-section{
+        padding: 120px 16px 48px;
+    }
     .hero-section .animation{
         width: 100%;
-        margin: 12px 0px 24px;
+        padding: 8px 0px 24px;
     }
     .hero-section .caption{
         font-size: 16px;
     }
     .hero-section h4{
         font-size: 20px;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
         line-height: 120%;
     }
     .hero-section .description{
-        width: 75%;
+        width: 90%;
         font-size: 16px;
     }
 }
@@ -567,7 +569,7 @@
     color: var(--white-90);
     font-size: 14px;
     line-height: 100%;
-    background-color: var(--main);
+    background: center center / cover url(../element/icon/hover-bg.svg);
     border-radius: 100px;
     position: absolute;
     bottom: -48px;
