@@ -2,10 +2,9 @@
 <g filter="url(#filter0_f_1959_43)">
 <circle cx="84" cy="84" r="40" fill="url(#paint0_linear_1959_43)"/>
 </g>
-<path d="M112.3 120L93.5 120L121.7 84H140.5L112.3 120Z" fill="#E6E6E6"/>
-<path d="M74.5 48L55.5 48L83.7001 84H102.5L74.5 48Z" fill="#E6E6E6"/>
-<path d="M93.7001 120L112.5 120L84.2999 84H65.5L93.7001 120Z" fill="#E6E6E6"/>
-<path d="M55.3001 48L74.5 48L46.6999 84H27.5L55.3001 48Z" fill="#E6E6E6"/>
+<path d="M84 101L104 67H64L84 101Z" fill="#E6E6E6"/>
+<path d="M93.4721 99L104.5 79.9863L115.528 99H93.4721Z" stroke="#E6E6E6" stroke-width="4"/>
+<path d="M52.4721 99L63.5 79.9863L74.5279 99H52.4721Z" stroke="#E6E6E6" stroke-width="4"/>
 <defs>
 <filter id="filter0_f_1959_43" x="0.599998" y="0.599998" width="166.8" height="166.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>

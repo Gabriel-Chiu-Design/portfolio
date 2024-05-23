@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="element/icon/logo-filled.png">
+    <link rel="stylesheet" href="css/404.css">
     <link rel="stylesheet" href="css/general.css">
     <title>error404</title>
 </head>
 <body>
-    OOPS 404
+    <div class="wrap">
+        <div class="header">
+            <div class="header-container">
+                <a href="index.html" class="logo-section">
+                    <div class="logo"></div>
+                    <p>SH Design Studio</p>
+                </a>
+                <ul class="nav">
+                    <li><a href="index.html">/Home</a></li>
+                    <li><a href="graphic/graphic.html">/Graphic Design</a></li>
+                    <li><a href="web-dev/web-dev.html">/Web Development</a></li>
+                    <li class="lang">
+                        <a id="lang-option" class="active">
+                            <img src="element/icon/lang.svg" alt="language-icon" class="lang-icon">
+                            <p>Eng</p>
+                            <img src="element/icon/lang-dropdown.svg" alt="dropdown-icon" class="dropdown-icon">
+                        </a>
+                        <a id="lang-option" class="inactive" href="chi-index.html">
+                            繁體中文
+                        </a>
+                    </li>
+                </ul>
+                <div class="side-menu-icon"></div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="element/icon/icon-04.svg" alt="error">
+            <div class="title">
+                <h1>No worries, we got you!</h1>
+                <p>404 Error.</p>
+            </div>
+            <a class="button" href="index.html">
+                <img src="element/icon/left-arrow-default.svg" alt="">
+                back to home page
+            </a>
+        </div>
+    </div>
+
+    <!-- javasrcript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/side-menu.js"></script>
 </body>
 </html>
