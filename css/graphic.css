@@ -135,7 +135,7 @@
     color: var(--white-90);
     font-size: 14px;
     line-height: 100%;
-    background-color: var(--main);
+    background: center center / 110% url(../element/icon/hover-bg.svg);
     border-radius: 100px;
     position: absolute;
     bottom: -48px;
@@ -148,6 +148,14 @@
 .gallery-item{
     --percentage:60%;
     background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat url(../element/picutre/other-projects-cover-test.png);
+}
+
+.gallery-item .hover-bg{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    display:block;
+    opacity: 0;
 }
 
 .gallery-item.item01{
@@ -250,6 +258,10 @@
     .tag{
         bottom:12px;
         transition: all 0.5s;
+    }
+
+    .hover-bg{
+        opacity: 1;
     }
 }
 
