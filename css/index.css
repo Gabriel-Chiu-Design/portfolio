@@ -33,6 +33,7 @@
     font-weight: 300;
     color: var(--white-75);
     text-align: center;
+    margin-bottom: 24px;
 }
 
 .hero-section h4{
