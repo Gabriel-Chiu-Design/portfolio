@@ -124,8 +124,6 @@ body{
 	max-width: 1366px;
 	margin: 0 auto;
 	opacity: 0;
-
-	transition: all 800ms ease;
 }
 
 .wrap.active{
