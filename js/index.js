@@ -1,4 +1,12 @@
 $(document).ready(function () {
+
+    // Preloader Event
+    $(".preload").addClass("active");
+
+    setTimeout(function () {      
+      $(".preload.active").removeClass("active");         
+}, 3500);
+
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
@@ -20,4 +28,5 @@ $(document).ready(function () {
           el: '.swiper-scrollbar',
         },
       });
+
 });
