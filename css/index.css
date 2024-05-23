@@ -699,6 +699,7 @@
 .testimonial-section .scroll-container{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     gap: 48px;
     background: linear-gradient(90deg, rgba(38, 38, 38, 100%) 0%, rgba(38, 38, 38, 0.00) 10%), 
     linear-gradient(-90deg, rgba(38, 38, 38, 100%) 0%, rgba(38, 38, 38, 0.00) 10%);
@@ -706,7 +707,8 @@
 
 .scroll-1{
     display: flex;
-    min-width: 200vw;
+    width: 200vw;
+    max-width: 2880px;
     position: relative;
     overflow: hidden;
     white-space: no-wrap;
