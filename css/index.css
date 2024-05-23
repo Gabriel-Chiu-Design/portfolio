@@ -569,7 +569,7 @@
     color: var(--white-90);
     font-size: 14px;
     line-height: 100%;
-    background: center center / cover url(../element/icon/hover-bg.svg);
+    background: center center / 120% url(../element/icon/hover-bg.svg);
     border-radius: 100px;
     position: absolute;
     bottom: -48px;
