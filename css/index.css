@@ -883,20 +883,10 @@
     gap: 80px;
 }
 
-.workflow-section .flow .stone{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.workflow-section .flow img{
     width: 240px;
     height: 240px;
-    background: center / cover no-repeat;
-    overflow: visible;
-}
-
-.workflow-section .flow .stone img{
-    width: 240px;
-    height: 240px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center center;
 }
 
@@ -962,19 +952,15 @@
         margin: 64px 0 64px;
     }
     .workflow-section .flow-list{
-        gap: 80px;
+        gap: 48px;
     }
     .workflow-section .flow{
         padding-left: 0px;
-        gap: 48px;
+        gap: 16px;
     }
-    .workflow-section .flow .stone{
-        width: 160px;
-        height: 160px;
-    }
-    .workflow-section .flow .stone img{
-        width: 200%;
-        height: 200%;
+    .workflow-section .flow img{
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -985,39 +971,44 @@
         gap: 48px;
     }
     .workflow-section .flow{
+        padding: 0 40px;
         gap: 16px;
+        flex-direction: column;
+        align-items: center;
     }
     .workflow-section .flow-list{
         gap: 64px;
     }
+    .workflow-section .flow .flow-brief{
+        gap: 8px;
+    }
     .workflow-section .flow .flow-brief h2{
         font-size: 24px;
+        text-align: center;
     }
     .workflow-section .flow .flow-brief p{
         font-size: 18px;
+        text-align: center;
     }
     .workflow-section .flow .flow-details{
+        display: none;
         font-size: 16px;
+        text-align: center;
     }
-    .workflow-section .flow .stone{
+    .workflow-section .flow img{
         width: 120px;
         height: 120px;
     }
-    .workflow-section .flow .stone img{
-        width: 200%;
-        height: 200%;
-    }
 }
 
-@media (max-width:440px) {
+@media (max-width:480px) {
     .workflow-section .flow-list{
         gap: 48px;
         margin: 36px 0 36px;
     }
     .workflow-section .flow{
         gap: 0px;
-        align-items: flex-start;
-        overflow: visible;
+        padding: 0;
     }
     .workflow-section .flow .stone {
         width: 100px;
