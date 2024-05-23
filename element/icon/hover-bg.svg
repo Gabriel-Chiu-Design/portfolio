@@ -1,14 +1,14 @@
-<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="222" height="222" viewBox="0 0 222 222" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f_1965_9)">
-<circle cx="110" cy="110" r="100" fill="url(#paint0_linear_1965_9)"/>
+<circle cx="111" cy="111" r="100" transform="rotate(-24.3324 111 111)" fill="url(#paint0_linear_1965_9)"/>
 </g>
 <defs>
-<filter id="filter0_f_1965_9" x="0" y="0" width="220" height="220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_f_1965_9" x="0.975342" y="0.975464" width="220.049" height="220.049" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_1965_9"/>
 </filter>
-<linearGradient id="paint0_linear_1965_9" x1="50.5" y1="49" x2="193.5" y2="249.5" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_1965_9" x1="51.5" y1="50.0001" x2="194.5" y2="250.5" gradientUnits="userSpaceOnUse">
 <stop stop-color="white"/>
 <stop offset="0.115" stop-color="#FFD600"/>
 <stop offset="0.274413" stop-color="#E38517"/>
