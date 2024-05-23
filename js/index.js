@@ -4,7 +4,8 @@ $(document).ready(function () {
     $(".preload").addClass("active");
 
     setTimeout(function () {      
-      $(".preload.active").removeClass("active");         
+      $(".preload.active").removeClass("active");
+      $(".wrap").addClass("active");       
 }, 3500);
 
     const swiper = new Swiper('.swiper', {
