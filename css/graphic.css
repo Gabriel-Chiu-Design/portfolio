@@ -317,7 +317,8 @@
         font-size: 12px;
     }
     .gallery-item.banner,
-    .gallery-item.PPT{
+    .gallery-item.PPT,
+    .gallery-item.vi{
         width: 100%;
     }
     .gallery-item h3{
