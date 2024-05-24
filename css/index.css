@@ -1015,10 +1015,6 @@
         gap: 0px;
         padding: 0;
     }
-    .workflow-section .flow .stone {
-        width: 100px;
-        height: 100px;   
-    }
     .workflow-section .flow .flow-brief h2{
         font-size: 20px;
     }
@@ -1027,10 +1023,5 @@
     }
     .workflow-section .flow .flow-details{
         font-size: 14px;
-    }
-    .workflow-section .flow .stone img{
-        width: 160px;
-        height: 240px;
-        object-position: -24px 12px;
     }
 }
