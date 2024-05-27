@@ -374,15 +374,15 @@ body{
 	top: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.70);
+	background-color: var(--black-85);
 	opacity: 0;
-	transition: all 300ms;
+	transition: all 500ms;
 	z-index: 2;
 }
 
 .overlay.active{
 	display: block;
-	opacity: 1;
+	opacity: 0.9;
 }
 
 .overlay:hover{

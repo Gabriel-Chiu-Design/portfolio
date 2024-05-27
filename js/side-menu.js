@@ -12,10 +12,12 @@ $(document).ready(function () {
         e.preventDefault();
         $(".side-menu").removeClass("active");
         $(".overlay").removeClass("active");
+        $(".lang .inactive").removeClass("open");
     });
 
     $(".lang .active").click(function (e) { 
         e.preventDefault();
         $(".inactive").toggleClass("open");
+        $(".overlay").toggleClass("active");
     });
 });
