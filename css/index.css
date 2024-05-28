@@ -21,7 +21,7 @@
 
 .hero-section .animation{
     max-width: 1024px;
-    width: 100%;
+    width: 90%;
     margin: 0px 0px 24px;
     object-fit: contain;
 }
@@ -55,6 +55,58 @@
     color: var(--white-75);
 }
 
+.hero-section .box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 48px;
+}
+
+.hero-section .box .btn{
+    display: flex;
+    position: relative;
+    gap: 8px;
+    padding: 8px 16px 8px 16px;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 4px;
+    color: var(--white-50);
+    background-color: var(--black-80);
+}
+
+.hero-section .box .btn .icon{
+    position: absolute;
+    content: url(../element/icon/btn-arrow.svg);
+    left: 45%;
+    top: -60%;
+    z-index: 2;
+    transition: all 300ms;
+    opacity: 0;
+}
+
+.hero-section .box .btn img{
+    height: 28px;
+    width: 28px;
+}
+
+.hero-section .box .btn:hover{
+    color: var(--white-90);
+    background-color: var(--black-70);
+    cursor: pointer;
+
+    .brand{
+        content: url(../element/icon/branding-hover.svg);
+    }
+
+    .website{
+        content: url(../element/icon/website-hover.svg);
+    }
+    .icon{
+        opacity: 1;
+    }
+}
+
 @media (max-width:1024px) {
     .hero-section .animation{
         width: 90%;
@@ -62,7 +114,6 @@
     .hero-section .caption{
         font-size: 16px;
     }
-    
     .hero-section h4{
         font-size: 28px;
         margin-bottom: 12px;
@@ -70,6 +121,16 @@
     .hero-section .description{
         width: 60%;
         font-size: 18px;
+    }
+    .hero-section .box{
+        gap: 24px;
+    }
+    .hero-section .box .btn{
+        font-size: 16px;
+    }
+    .hero-section .box .btn img{
+        height: 24px;
+        width: 24px;
     }
 }
 
@@ -93,6 +154,9 @@
         width: 75%;
         font-size: 16px;
     }
+    .hero-section .box{
+        gap: 16px;
+    }
 }
 @media (max-width:580px) {
     .hero-section{
@@ -113,6 +177,20 @@
     .hero-section .description{
         width: 90%;
         font-size: 16px;
+    }
+    .hero-section .box{
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        gap: 16px;
+    }
+    .hero-section .box .btn{
+        width: fit-content;
+        font-size: 14px;
+    }
+    .hero-section .box .btn img{
+        height: 20px;
+        width: 20px;
     }
 }
 

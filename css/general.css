@@ -309,7 +309,7 @@ body{
 	}
 
 	.dropdown-icon{
-		content: url(../element/icon/lang-dropdown-hover.svg);
+		content: url(../element/icon/down-arrow-hover.svg);
 	}
 }
 
@@ -374,15 +374,15 @@ body{
 	top: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: var(--black-85);
-	opacity: 0;
+	background-color: rgba(38, 38, 38, 0.00);
 	transition: all 500ms;
 	z-index: 2;
 }
 
 .overlay.active{
 	display: block;
-	opacity: 0.9;
+	background-color: rgba(38, 38, 38, 0.75);
+	backdrop-filter: blur(4px);
 }
 
 .overlay:hover{
