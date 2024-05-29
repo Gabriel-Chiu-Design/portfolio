@@ -38,6 +38,7 @@
     font-weight: 400;
     color: var(--white-90);
     text-align: center;
+    line-height: 150%;
 }
 
 .hero-section .description{
@@ -151,17 +152,12 @@
     .hero-section{
         padding: 0px 16px;
     }
-    .hero-section .caption{
-        font-size: 16px;
+    .hero-section .text-wrap span{
+        line-height: 125%;
+        font-size: 28px;
     }
-    .hero-section h4{
-        font-size: 20px;
-        margin-bottom: 8px;
-        line-height: 120%;
-    }
-    .hero-section .description{
-        width: 90%;
-        font-size: 16px;
+    .hero-section .animation{
+        height: 24px;
     }
     .hero-section .box{
         width: auto;
@@ -174,6 +170,20 @@
     }
     .hero-section .box .btn img{
         display: none;
+    }
+}
+
+@media (max-width:414px) {
+    .hero-section .text-wrap span{
+        text-align: start;
+    }
+    .hero-section .description{
+        text-align: start;
+    }
+    .hero-section .box{
+        width: 100%;
+        justify-content: start;
+        gap: 16px;
     }
 }
 
