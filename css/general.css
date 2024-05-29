@@ -290,6 +290,10 @@ body{
 	height: 20px;
 }
 
+.header .lang .dropdown-icon{
+	content: url(/element/icon/down-arrow-default.svg);
+}
+
 .header .inactive{
 	position: absolute;
 	top: 8px;

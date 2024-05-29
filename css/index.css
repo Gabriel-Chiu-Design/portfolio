@@ -17,36 +17,31 @@
     width: 100%;
     padding: 0 48px;
     position: relative;
+    gap: 40px;
 }
 
 .hero-section .animation{
-    max-width: 1024px;
-    width: 90%;
-    margin: 0px 0px 24px;
+    height: 96px;
     object-fit: contain;
 }
 
-.hero-section .caption{
-    width: 100%;
-    font-size: 20px;
-    letter-spacing: 0.4px;
-    font-weight: 300;
-    color: var(--white-75);
-    text-align: center;
-    margin-bottom: 24px;
+.hero-section .text-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
 }
 
-.hero-section h4{
-    font-size: 32px;
+.hero-section .text-wrap span{
+    font-size: 64px;
     letter-spacing: 0.4px;
     font-weight: 400;
     color: var(--white-90);
-    margin-bottom: 16px;
     text-align: center;
 }
 
 .hero-section .description{
-    width: 50%;
+    max-width: 800px;
     font-size: 20px;
     letter-spacing: 0.4px;
     font-weight: 300;
@@ -59,8 +54,8 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    gap: 48px;
-    margin-top: 48px;
+    gap: 24px;
+    margin-top: 24px;
 }
 
 .hero-section .box .btn{
@@ -98,7 +93,6 @@
     .brand{
         content: url(../element/icon/branding-hover.svg);
     }
-
     .website{
         content: url(../element/icon/website-hover.svg);
     }
@@ -109,17 +103,15 @@
 
 @media (max-width:1024px) {
     .hero-section .animation{
-        width: 90%;
+        height: 64px;
     }
-    .hero-section .caption{
-        font-size: 16px;
+    .hero-section .text-wrap{
+        gap: 8px;
     }
-    .hero-section h4{
-        font-size: 28px;
-        margin-bottom: 12px;
+    .hero-section .text-wrap span{
+        font-size: 48px;
     }
     .hero-section .description{
-        width: 60%;
         font-size: 18px;
     }
     .hero-section .box{
@@ -137,21 +129,18 @@
 @media (max-width:768px) {
     .hero-section{
         padding: 0px 24px;
+        gap: 24px;
+    }
+    .hero-section .text-wrap{
+        gap: 8px;
     }
     .hero-section .animation{
-        width: 100%;
-        margin: 0px 0px 0px;
+        height: 32px;
     }
-    .hero-section .caption{
-        font-size: 16px;
-    }
-    
-    .hero-section h4{
-        font-size: 24px;
-        margin-bottom: 12px;
+    .hero-section .text-wrap span{
+        font-size: 36px;
     }
     .hero-section .description{
-        width: 75%;
         font-size: 16px;
     }
     .hero-section .box{
@@ -161,10 +150,6 @@
 @media (max-width:580px) {
     .hero-section{
         padding: 0px 16px;
-    }
-    .hero-section .animation{
-        width: 100%;
-        padding: 8px 0px 24px;
     }
     .hero-section .caption{
         font-size: 16px;
@@ -179,7 +164,6 @@
         font-size: 16px;
     }
     .hero-section .box{
-        flex-direction: column;
         width: auto;
         align-items: center;
         gap: 16px;
@@ -189,8 +173,7 @@
         font-size: 14px;
     }
     .hero-section .box .btn img{
-        height: 20px;
-        width: 20px;
+        display: none;
     }
 }
 
