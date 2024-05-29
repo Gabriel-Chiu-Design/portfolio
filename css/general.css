@@ -141,6 +141,7 @@ body{
 	opacity: 0;
 	background-color: var(--black-85);
 	z-index: -1;
+	padding-bottom: 3%;
 
 	transition: all 800ms ease;
 }
@@ -174,7 +175,7 @@ body{
 
 @media (max-width:768px) {
 	.preload{
-		padding: 0 16px;
+		padding: 0 16px 3%;
 	}
 	.preload img{
 		width: 100px;
@@ -333,7 +334,7 @@ body{
 	width: 100%;
 	flex-direction: column;
 	align-self: stretch;
-	box-shadow: 0px 2px 4px 0px var(--black-70);
+	box-shadow: 0px 2px 4px 0px var(--black-80);
 	position: fixed;
 	top: -800px;
 	padding-top: 106px;
@@ -367,9 +368,9 @@ body{
 }
 
 .side-menu .arrow{
-	width: 48px;
-	height: 48px;
-	background: center / contain no-repeat url(../element/icon/arrow-right.svg);
+	width: 36px;
+	height: 36px;
+	background: center / contain no-repeat url(../element/icon/right-arrow-default.svg);
 }
 
 .overlay{
@@ -417,10 +418,14 @@ body{
 		padding-top: 96px;
 	}
 	.side-menu a{
-		padding: 16px 16px 16px 32px;
+		padding: 24px 16px 24px 32px;
 	}
 	.side-menu a p{
 		font-size: 16px;
+	}
+	.side-menu .arrow{
+		width: 24px;
+		height: 24px;
 	}
 	.header .header-container{
 		padding: 24px 16px;

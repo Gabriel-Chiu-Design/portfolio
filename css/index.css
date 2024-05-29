@@ -15,34 +15,41 @@
     align-items: center;
     height: 100vh;
     width: 100%;
-    padding: 0 48px;
+    max-width: 960px;
+    padding: 0 48px 5%;
     position: relative;
     gap: 40px;
+    overflow: visible;
+}
+
+.hero-section .hero-bg{
+    position: absolute;
+    z-index: -1;
+    filter: blur(80px);
+}
+
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
 }
 
 .hero-section .animation{
-    height: 96px;
+    height: 80px;
     object-fit: contain;
 }
 
-.hero-section .text-wrap{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
-}
-
-.hero-section .text-wrap span{
-    font-size: 64px;
+.hero-section h1{
+    font-size: 96px;
     letter-spacing: 0.4px;
+    line-height: 110%;
     font-weight: 400;
     color: var(--white-90);
     text-align: center;
-    line-height: 150%;
 }
 
 .hero-section .description{
-    max-width: 800px;
     font-size: 20px;
     letter-spacing: 0.4px;
     font-weight: 300;
@@ -63,7 +70,7 @@
     display: flex;
     position: relative;
     gap: 8px;
-    padding: 8px 16px 8px 16px;
+    padding: 12px 16px 12px 16px;
     align-items: center;
     font-size: 18px;
     border-radius: 4px;
@@ -102,15 +109,15 @@
     }
 }
 
+@media (max-width:1440px) {
+    .hero-section h1{
+        font-size: 80px;
+    }
+}
+
 @media (max-width:1024px) {
-    .hero-section .animation{
-        height: 64px;
-    }
-    .hero-section .text-wrap{
-        gap: 8px;
-    }
-    .hero-section .text-wrap span{
-        font-size: 48px;
+    .hero-section h1{
+        font-size: 72px;
     }
     .hero-section .description{
         font-size: 18px;
@@ -129,17 +136,11 @@
 
 @media (max-width:768px) {
     .hero-section{
-        padding: 0px 24px;
+        padding: 0px 24px 5%;;
         gap: 24px;
     }
-    .hero-section .text-wrap{
-        gap: 8px;
-    }
-    .hero-section .animation{
-        height: 32px;
-    }
-    .hero-section .text-wrap span{
-        font-size: 36px;
+    .hero-section h1{
+        font-size: 64px;
     }
     .hero-section .description{
         font-size: 16px;
@@ -150,14 +151,13 @@
 }
 @media (max-width:580px) {
     .hero-section{
-        padding: 0px 16px;
+        padding: 0px 16px 5%;;
     }
-    .hero-section .text-wrap span{
-        line-height: 125%;
-        font-size: 28px;
+    .hero-section h1{
+        font-size: 54px;
     }
     .hero-section .animation{
-        height: 24px;
+        height: 44px;
     }
     .hero-section .box{
         width: auto;
@@ -166,15 +166,17 @@
     }
     .hero-section .box .btn{
         width: fit-content;
-        font-size: 14px;
     }
     .hero-section .box .btn img{
         display: none;
     }
 }
 
-@media (max-width:414px) {
-    .hero-section .text-wrap span{
+@media (max-width:440px) {
+    .hero-section .container{
+        align-items: flex-start;
+    }
+    .hero-section h1{
         text-align: start;
     }
     .hero-section .description{
