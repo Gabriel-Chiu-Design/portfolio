@@ -248,6 +248,13 @@
     background-size: 120%;
 }
 
+/* Zen logo */
+.gallery-item.item16{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/zen/cover.png);
+    background-size: 100%;
+}
+
 /* bg-size=100% */
 .gallery-item:hover{
     --percentage:-10%;
