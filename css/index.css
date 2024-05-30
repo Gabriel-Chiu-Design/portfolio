@@ -74,8 +74,16 @@
     align-items: center;
     font-size: 18px;
     border-radius: 4px;
-    color: var(--white-50);
-    background-color: var(--black-80);
+}
+
+.hero-section .box .btn.pri{
+    color: var(--black-80);
+    background-color: var(--white-90);
+}
+
+.hero-section .box .btn.sec{
+    color: var(--white-90);
+    border: 1.5px solid var(--white-90);
 }
 
 .hero-section .box .btn .icon{
@@ -94,16 +102,8 @@
 }
 
 .hero-section .box .btn:hover{
-    color: var(--white-90);
-    background-color: var(--black-70);
     cursor: pointer;
-
-    .brand{
-        content: url(../element/icon/branding-hover.svg);
-    }
-    .website{
-        content: url(../element/icon/website-hover.svg);
-    }
+    
     .icon{
         opacity: 1;
     }

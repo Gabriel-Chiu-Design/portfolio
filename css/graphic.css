@@ -404,7 +404,8 @@
         height: 160px;
     }
     .gallery-item.banner,
-    .gallery-item.PPT{
+    .gallery-item.PPT,
+    .gallery-item.vi{
         height: 200px;
     }
 }

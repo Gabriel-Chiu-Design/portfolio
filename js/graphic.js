@@ -19,7 +19,7 @@ $(document).ready(function () {
             $(".gallery-item").removeClass("active")
             setTimeout(function(){
                 $("."+ category).addClass("active")
-            }, 500);
+            }, 300);
             $(".clear").addClass("active");
         }
     });
