@@ -25,6 +25,7 @@
     justify-content: flex-end;
     position: relative;
     overflow: hidden;
+    transition: all 0.5s ease-out;
 }
 
 .selected-projects .project-list .project h2{
@@ -49,7 +50,7 @@
     color: var(--white-90);
     font-weight: 300;
     line-height: 120%;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .selected-projects .project-list .project .tag{

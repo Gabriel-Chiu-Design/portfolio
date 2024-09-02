@@ -638,6 +638,7 @@
     position: absolute;
     bottom: -48px;
     right: 12px;
+    transition: all 0.5s;
 }
 
 .selected-projects .project-list .project.prj-1{
@@ -666,6 +667,10 @@
     --percentage:0%;
     background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 120%), center center / cover no-repeat url(../element/projects/uneo/project-cover.png);
     background-size: var(--size);
+}
+
+.selected-projects .project-list .project{
+    transition: all 0.5s ease-out;
 }
 
 .selected-projects .project-list .project:hover{
