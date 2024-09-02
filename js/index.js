@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     setTimeout(function () {      
       $(".preload.active").removeClass("active");
-      $(".wrap").addClass("active");       
+      $(".wrap").addClass("active"); 
 }, 3500);
 
     const swiper = new Swiper('.swiper', {

@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    $(".wrap").addClass("active");
-
     $(".side-menu-icon").click(function (e) { 
         e.preventDefault();
         $(".side-menu").toggleClass("active");

@@ -1,5 +1,12 @@
 .wrap{
     overflow-x: hidden;
+    opacity: 0;
+	transition: all ease 500ms;
+}
+
+.wrap.active{
+	opacity: 1;
+	transition: all ease 500ms;
 }
 
 .header{

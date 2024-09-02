@@ -123,11 +123,6 @@ body{
 	align-items: center;
 	max-width: 1366px;
 	margin: 0 auto;
-	opacity: 0;
-}
-
-.wrap.active{
-	opacity: 1;
 }
 
 .preload{
@@ -142,8 +137,7 @@ body{
 	background-color: var(--black-85);
 	z-index: -1;
 	padding-bottom: 3%;
-
-	transition: all 800ms ease;
+	transition: all ease 500ms;
 }
 
 .preload.active{
