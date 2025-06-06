@@ -286,7 +286,7 @@ body{
 }
 
 .header .lang .dropdown-icon{
-	content: url(/element/icon/down-arrow-default.svg);
+	content: url(../element/icon/down-arrow-default.svg);
 }
 
 .header .inactive{
