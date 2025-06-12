@@ -292,6 +292,10 @@
     background-size: 130%;
 }
 
+.item17:hover{
+    background-size: calc(auto +10%);
+}
+
 @media (max-width:1440px) {
     .graphic-section{
         margin:0;
