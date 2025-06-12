@@ -255,6 +255,12 @@
     background-size: 100%;
 }
 
+.gallery-item.item17{
+    background: linear-gradient(180deg, rgba(106, 106, 106, 0.00) var(--percentage), #000 100%), center center / cover no-repeat 
+    url(../element/projects/metrowine/mw-4.png);
+    background-size: 100%;
+}
+
 /* bg-size=100% */
 .gallery-item:hover{
     --percentage:-10%;
